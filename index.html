@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -9,38 +9,42 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="logo4.png" alt="logo soleil mer"><h3>OnlineVoyages</h3> <img class="soleil" src="soleil.png" alt="image soleil">
+        <img class="logo" src="logo4.png" alt="logo soleil mer"><h3>OnlineVoyages</h3> <img class="soleil" src="soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
+        <div class="connexion"><a href="#">Espace client</a></div> 
         <nav>
             <ul class="menu-deroulant">
-                <li class="menu-deroulant"><a href="#">Séjours</a>
+                <li class="menu-deroulant"><a href="#">Séjour</a>
                     <ul class="sous-menu">
                         <li><a href="#">Croisière</a></li>
                         <li><a href="#">Séjour en Hôtel</a></li>
                         <li><a href="#">Séjour en Club</a></li>
                         <li><a href="#">Camping</a></li>
                     </ul>
-                </li><!--
-             --><li class="menu-deroulant"><a href="#">Week-end</a>
+                </li>
+             <li class="menu-deroulant"><a href="#">Week-end</a>
                     <ul class="sous-menu">
                         <li><a href="#">Thalasso/Bien-être</a></li>
                         <li><a href="#">Découverte/aventure</a></li>
                     </ul>
-                        <li><a href="#">Bons Plans</a>
-                    
+                        <li class="menu-deroulant"><a href="#">Bons Plans</a>
+                            <ul class="sous-menu">
+                                <li><a href="#">Séjour</a></li>
+                                <li><a href="#">Week-end</a></li>
+                            </ul>
                 </li>
             </ul>
         </nav>
-         
+       
         <form> 
             <span>Destination</span>
-            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+                <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
             <span>Au départ de</span>
-            <input type="text" name=Départ class="départ" placeholder="Marseille">
+                <input type="text" name=Départ class="départ" placeholder="Marseille">
             <span>Date</span>
             <input type="date" name=Date class="date" placeholder="14/04/2022">
-            <span>Nombres de jours</span>
+                <span>Nombres de jours</span>
             <input type="number" name=Nombre class="jours" placeholder="7jours">
-            <span>Type de voyage</span>
+                <span>Type de voyage</span>
             <select name="type_voyage" id="voyage">
                 <option value="séjour_hôtel">Séjour Hôtel</option>
                 <option value="séjour_club">Séjour Club</option>

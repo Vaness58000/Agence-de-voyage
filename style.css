@@ -6,29 +6,29 @@
 header{
     background-image: url("mer2.jpg");
     width:100%;
-    height: 500px;
+    height: 400px;
     background-size: 160%;
-    background-position-y: 60%;
-    background-position-x: 90%;
+    background-position-y: 80%;
+    background-position-x: 60%;
     background-repeat: no-repeat;
     z-index: 4;
 }
 .logo{
     float: left;
-    margin-top: -30px;
+    margin-top: -40px;
     margin-right: -40px;
-    margin-left: 150px;
-    width: 10%;
+    margin-left: 50px;
+    width: 12%;
 }
 h3{
     color: #ffe600;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     padding-top: 50px;
 }
 :root{
     --hauteur-menu: 60px;
 }
-  nav {
+nav {
     width: 75%;
     font-size: 18px;
     position: sticky;
@@ -64,25 +64,23 @@ nav > ul {
     content: '❯';
     font-size: 15px;
     margin-left: 7px;
-    display: inline-block;
+    display: inline-block; 
   }
   .sous-menu {
     margin-top: var(--hauteur-menu);
     width: 100%;
-    text-align: left;
+    text-align: center;
     background-color: rgb(33, 178, 210);
     border-radius: 2px;
     overflow: hidden;
     max-height: 0;
-    position: relative;
-    z-index:3;
   } 
   .sous-menu > li > a {
     height: 30px;
     padding-left: 20px;
     width: 100%;
     align-items: center;
-    display: flex;
+    display: flex; 
   }
   nav > ul > li:hover > a{
     color: #fafafa;
@@ -115,30 +113,63 @@ nav > ul {
   .menu-deroulant:hover > .sous-menu {
     animation: apparitionSousMenu 1s forwards;
   }
-  form{
-      padding-top: 50px;
-  }
-  .soleil{
+.connexion>a{
+  float: right;
+  margin-top: -20px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: #fafafa;
+}
+.soleil{
       margin-top: -100px;
       float: right;
-      width: 25%;
-      height: 60%;
+      width: 22%;
+      height: 75%;
       z-index: 1;
+}
+header p{
+      font-size: 24px;
+      line-height: 2em;
+      margin-left: 85.5%;
+      text-align: center;
+      position: absolute;
+      color: #fafafa;
 }
 form{
     margin-top: 70px;
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-left: 150px;
-    padding-right: 25px;
+    padding-left: 20px;
     background-color: rgb(33, 178, 210);
-    position: absolute;
     width: 100%;
-    z-index: 2;
+    margin-bottom: 10px;
 }
 span{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+input, select{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  border: none; 
+  text-decoration: none;
+}
+input:hover{
+  outline: none;
+  text-decoration: none;
+}
+.jours{
+  width: 5%;
+}
 button{
-    border-color: 
+    border-color:  rgb(5, 5, 167);
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(5, 5, 167);
+    margin-left: 40px;
+}
+button:hover{
+    transform:scale(1.05);
+    transition: 2ms ease-out;
 }
