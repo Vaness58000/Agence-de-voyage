@@ -9,8 +9,12 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="logo4.png" alt="logo soleil mer"><h3>OnlineVoyages</h3> <img class="soleil" src="soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
-        <div class="connexion"><a href="#">Espace client</a></div> 
+        <div id="logo"><img class="logo" src="logo4.png" alt="logo soleil mer"></div><h3>OnlineVoyages</h3> <img class="soleil" src="soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
+        <div class="connexion">
+            <input id="login" type="text" name="email" class="form__input" placeholder="email" required="">
+            <input id="login_password" type="password" name="mot_passe" class="form__input" placeholder="mot de passe" required="">
+        </div>
+        <div class="inscription"><a href="#">s'inscrire</a></div>
         <nav>
             <ul class="menu-deroulant">
                 <li class="menu-deroulant"><a href="#">Séjour</a>
@@ -35,22 +39,21 @@
             </ul>
         </nav>
        
-        <form> 
-            <span>Destination</span>
-                <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
-            <span>Au départ de</span>
-                <input type="text" name=Départ class="départ" placeholder="Marseille">
-            <span>Date</span>
+        <form>
+            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
             <input type="date" name=Date class="date" placeholder="14/04/2022">
-                <span>Nombres de jours</span>
-            <input type="number" name=Nombre class="jours" placeholder="7jours">
-                <span>Type de voyage</span>
-            <select name="type_voyage" id="voyage">
-                <option value="séjour_hôtel">Séjour Hôtel</option>
-                <option value="séjour_club">Séjour Club</option>
-                <option value="camping">Camping</option>
+            <select name="nombre de jour" id="voyage">
+                        <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                        <option value="camping">2 semaines (12 à 19 jours)</option>
+                        <option value="croisière">Séjour long (20 jours et plus)</option>
+                      </select>  
+            <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                <option value="séjour_hôtel">Séjours tout compris</option>
+                <option value="séjour_club">Séjours Famille</option>
                 <option value="croisière">Croisière</option>
-                <option value="Week-end">Week-end</option>
+                <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                <option value="camping">Camping</option>
+                <option value="camping">Séjours Thalasso/Bien-être</option>
               </select>
               <button>Rechercher</button>
           </form>
