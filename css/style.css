@@ -1,0 +1,59 @@
+footer{
+    
+    width: 100%;
+    display:flex;
+    background-color: #196c67
+}
+
+.nous{
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.nous p{
+    padding-top: 20px;
+}
+
+.mentions{
+    width: 20%;
+    color: aliceblue;
+    display: block;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.mentions p{
+    padding-top: 20px;
+}
+
+.reseau{
+    width: 180px;
+}
+
+.paiement-securisé{
+  transform: translateX(100px);
+  margin-right: 120px;
+  
+   text-align: center;
+}
+
+.info{
+    color: aliceblue;
+    padding-top: 50px;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.numero{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.paiement{
+    padding-top:50px;
+    width: 60%;
+    transform: translateX(20px);
+}
