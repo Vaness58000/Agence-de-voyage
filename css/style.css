@@ -252,7 +252,7 @@ button:hover{
   }
   95% { left: -300%; 
   }
-  100% { left: -500%; 
+  100% { left: -300%; 
   }
 }
 div#slider figure {
