@@ -1,8 +1,86 @@
+table tr th{
+    border: 1px solid black;
+    width: 20%;
+   
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.bouton-bleu {
+    
+    margin-top: -20px;
+    border-top: none;
+    background-color: blue;
+    border: none;
+    padding: 20px;
+    color: #D9F8FF;
+    text-decoration: none;
+}
+
+.bas{
+    border: none;
+}
+
+.bouton-bleu:hover{
+    transition: 2ms;
+    transform: scale(1.05);
+    
+}
+
+
+
+table{
+    border-collapse:collapse;
+    display: inline;
+    margin-left: 200px;
+    margin-top: -270px;
+    position: absolute;
+    transform: translate(-110px);
+    background-color: #D9F8FF;
+    
+    
+}
+
+table caption{
+    margin-bottom: 32px;
+}
+
+.premiere-ligne{
+    border-top: none;
+}
+
+.derniere-ligne{
+    border-bottom: none;
+}
+
+ table tfoot{
+    border: none;
+}
+
+.famille1{
+    width: 36%;
+    display: block;
+}
+
+.famille2{
+    width: 36%;
+    display: inline;
+    margin-bottom: 60px;
+}
+
+.tableau-acceuil{
+    margin-left: 100px;
+}
+
+
+
+
 footer{
     
     width: 100%;
     display:flex;
-    background-color: #196c67
+    background-color: #1ec5ba
 }
 
 .nous{
