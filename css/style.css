@@ -1,3 +1,53 @@
+.imbattables{
+    display: flex;
+    margin-bottom: 50px;
+  
+    
+}
+
+li{
+    padding: 10px;
+    border-radius: 20px;
+    list-style-type: none;
+    -webkit-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+-moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+}
+
+.imbattables li{
+    margin-left: 170px;
+}
+
+ul  :hover{
+    padding: 10px;
+    transform: scale(1.10);
+    
+    
+}
+
+.photo{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 350px;
+    height: 200px;
+}
+
+
+.promo{
+    margin-top: -200px;
+    transform: translateX(300px);
+    position: absolute;
+    width: 30px;
+    background-color: yellow;
+    height: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.prix{
+    text-align: right;
+}
+
 table tr th{
     border: 1px solid black;
     width: 20%;
@@ -9,13 +59,14 @@ table tr th{
 
 .bouton-bleu {
     
-    margin-top: -20px;
-    border-top: none;
-    background-color: blue;
     border: none;
-    padding: 20px;
-    color: #D9F8FF;
-    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 35px 15px 35px;
+    background-color: rgb(0, 50, 252);
+    margin-right: 30px;
+    box-shadow: 1px 2px 3px 1px #0101ff;
 }
 
 .bas{
@@ -34,12 +85,10 @@ table{
     border-collapse:collapse;
     display: inline;
     margin-left: 200px;
-    margin-top: -270px;
+    margin-top: -274px;
     position: absolute;
     transform: translate(-110px);
     background-color: #D9F8FF;
-    
-    
 }
 
 table caption{
@@ -48,14 +97,6 @@ table caption{
 
 .premiere-ligne{
     border-top: none;
-}
-
-.derniere-ligne{
-    border-bottom: none;
-}
-
- table tfoot{
-    border: none;
 }
 
 .famille1{
@@ -77,26 +118,31 @@ table caption{
 
 
 footer{
-    
     width: 100%;
     display:flex;
     background-color: #1ec5ba
 }
 
 .nous{
-    color: aliceblue;
+    
+   
     font-size: 20px;
     margin-top: 10px;
     margin-left: 200px;
 }
 
 .nous p{
+    color: aliceblue;
     padding-top: 20px;
+}
+
+.nous p a{
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .mentions{
     width: 20%;
-    color: aliceblue;
     display: block;
     font-size: 20px;
     margin-left: 300px;
@@ -105,6 +151,10 @@ footer{
 
 .mentions p{
     padding-top: 20px;
+}
+.mentions p a{
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .reseau{
