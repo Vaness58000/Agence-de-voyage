@@ -12,7 +12,7 @@
         <div id="logo"><img class="logo" src="img/logo4.png" alt="logo soleil mer"></div><h3>OnlineVoyages</h3> <img class="soleil" src="img/soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
       
         <div class="connexion_inscription"><a href="#">se connecter</a><br><a href="#">s'inscrire</a></div>
-        <nav>
+        <nav >
             <ul class="menu-deroulant">
                 <li class="menu-deroulant"><a href="#">Séjour</a>
                     <ul class="sous-menu">
@@ -35,25 +35,24 @@
                 </li>
             </ul>
         </nav>
-       
-        <form>
-            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
-            <input type="date" name=Date class="date" placeholder="14/04/2022">
-            <select name="nombre de jour" id="voyage">
-                        <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
-                        <option value="camping">2 semaines (12 à 19 jours)</option>
-                        <option value="croisière">Séjour long (20 jours et plus)</option>
-                      </select>  
-            <select name="type_voyage" id="voyage" aria-label="type de voyage">
-                <option value="séjour_hôtel">Séjours tout compris</option>
-                <option value="séjour_club">Séjours Famille</option>
-                <option value="croisière">Croisière</option>
-                <option value="séjour_hôtel">Séjour Hôtel/Club</option>
-                <option value="camping">Camping</option>
-                <option value="camping">Séjours Thalasso/Bien-être</option>
-              </select>
-              <button>Rechercher</button>
-          </form>
+            <form>
+                <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+                <input type="date" name=Date class="date" placeholder="14/04/2022">
+                <select name="nombre de jour" id="voyage">
+                            <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                            <option value="camping">2 semaines (12 à 19 jours)</option>
+                            <option value="croisière">Séjour long (20 jours et plus)</option>
+                        </select>  
+                <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                    <option value="séjour_hôtel">Séjours tout compris</option>
+                    <option value="séjour_club">Séjours Famille</option>
+                    <option value="croisière">Croisière</option>
+                    <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                    <option value="camping">Camping</option>
+                    <option value="camping">Séjours Thalasso/Bien-être</option>
+                </select>
+                <button>Rechercher</button>
+            </form>   
     </header>
     <div id="section1">
     <div id="slider">
@@ -121,7 +120,7 @@
     <div class="tableau-acceuil">
         <img class="famille1" title="famille contente" src="./img/photo famille.jfif" alt="photo famille">
         <img class="famille2" title="famille contente 2" src="./img/photo famille2.jfif" alt="photo famille 2">
-        <table cellpadding="36" class="deniere-minute">
+        <table id="tableau-principal" cellpadding="36" class="deniere-minute">
             <caption>Départ de dernière minute</caption>
             <tr >
                 <th class="premiere-ligne">samedi 16 avril</th>

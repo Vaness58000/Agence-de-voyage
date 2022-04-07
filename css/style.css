@@ -269,9 +269,9 @@ button:hover{
 .imbattables{
     display: flex;
     margin-bottom: 50px;
-  
     
 }
+
 
 .carte{
     padding: 10px;
@@ -280,10 +280,16 @@ button:hover{
     -webkit-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
 -moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
 box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+-webkit-transition: -webkit-transform 1s;
+}
+
+.carte:hover{
+    -webkit-transform: scale(1.10)
 }
 
 .imbattables li{
     margin-left: 170px;
+
 }
 
 
@@ -292,6 +298,25 @@ box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
     border-top-right-radius: 20px;
     width: 350px;
     height: 200px;
+}
+
+.photo-croisiere {
+    -webkit-transition: -webkit-transform 1s;
+}
+
+.photo1:active{
+    -webkit-transform: scale(3.62) translate(194px,58px);
+     height: 170px; 
+}
+
+.photo2:active{
+    -webkit-transform: scale(3.62) translate(194px,-2px);
+    height: 170px;
+}
+
+.photo3:active{
+    -webkit-transform: scale(3.62) translate(194px,-60px);
+    height: 170px;
 }
 
 
@@ -310,7 +335,7 @@ box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
     text-align: right;
 }
 
-table tr th{
+#tableau-principal tr th{
     border: 1px solid black;
     width: 250px;
     height: 110px;
@@ -347,7 +372,7 @@ button:hover{
 
 
 
-table{
+#tableau-principal{
     border-collapse:collapse;
     display: inline;
     margin-left: 200px;
@@ -357,7 +382,7 @@ table{
     background-color: #D9F8FF;
 }
 
-table caption{
+#tableau-principal caption{
     margin-bottom: 32px;
 }
 
@@ -386,7 +411,7 @@ table caption{
 footer{
     width: 100%;
     display:flex;
-    background-color: #1ec5ba
+    background-color: #1ec5ba;
 }
 
 .nous{
@@ -451,3 +476,185 @@ footer{
     width: 60%;
     transform: translateX(20px);
 }
+
+.destination-croisiere{
+    margin-top: 80px;
+    margin-left: 110px;
+
+}
+
+
+.photo-croisiere{
+    display: flex;
+   width: 270px;
+   padding-bottom: 15px;
+    padding-top: 18px;
+}
+
+.photo-croisiere ul{
+    list-style-type: none;
+}
+
+.photo-croisiere3{
+    display: block;
+    
+   
+}
+
+.croisiere{
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+
+
+
+.bateau{ 
+    margin-left: 350px;
+   width: 54%;
+   display: flex;
+   margin-top: -620px;
+}
+
+.description-croisiere{
+    padding-left: 35px;
+    padding-bottom: 30px;
+    background-color: #D9F8FF;
+    float: right;
+    margin-right: 200px;
+    margin-top: -600px;
+}
+
+.description-croisiere ul li{
+
+    padding-top:60px ;
+}
+
+.description-croisiere p{
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.bouton-croisiere{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 35px 15px 35px;
+    background-color: rgb(0, 50, 252);
+    margin-right: 30px;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+    margin-top:50px;
+}
+.depart-de{
+    color: aliceblue;
+    display: inline-flex;
+    margin-top: 180px;
+    margin-left: 370px;
+    border: 1px solid black;
+    background-color: #7070dd;
+    border-radius: 200px;
+    padding: 10px;
+}
+
+#tableau-croisiere{
+    border-collapse: collapse;
+    width: 70%;
+    height: 500px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: #d9f8ff93;
+    
+}
+
+#tableau-croisiere tr th{
+    border: 1px solid black;
+    
+}
+
+#prix-croisiere{
+    margin-left: 350px;
+
+}
+
+.photo-interieur1{
+    width: 200px;
+}
+.photo-interieur{
+    display: flex;
+}
+
+.interieur1{
+
+    transform: translatex(225px);
+}
+
+.interieur2{
+    transform: translatex(135px);
+}
+
+.interieur3{
+    transform: translatex(38px);
+}
+
+.interieur4{
+    transform: translatex(-48px);
+}
+
+.texte1{
+    transform: translate(70px,150px);
+}
+
+.texte2{
+    transform: translate(-20px,150px);
+}
+
+.texte3{
+    transform: translate(-110px,150px);
+}
+
+.texte4{
+    transform: translate(-190px,150px);
+}
+
+
+.interieur-tableau{
+    width: 20%;
+}
+
+.programme-croisiere{
+    color: aliceblue;
+    overflow: auto;
+    width: 45%;
+    height: 300px;
+    margin-left: 350px;
+    margin-bottom: 200px;
+    display: flex
+}
+
+.prestation-coisiere{
+   
+    position: absolute;
+    transform: translate(1500px,-590px);
+    background-color: #d9f8ff;
+    padding: 30px;
+}
+
+.prestation-coisiere li{
+    padding-top: 10px;
+}
+
+.prestation-coisiere figcaption{
+    margin-bottom: 30px;
+}
+
+.fond-croisiere{
+    background-image: url(../img/bateau\ fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
