@@ -657,4 +657,15 @@ footer{
     padding-bottom: 50px;
 }
 
-
+.voir-plus{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
+    margin-left: 750px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(0, 50, 252);
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
