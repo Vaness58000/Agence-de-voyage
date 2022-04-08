@@ -6,7 +6,7 @@
 header{
     background-image: url("mer2.jpg");
     width:100%;
-    height: 350px;
+    height: 380px;
     background-size: 160%;
     background-position-y: 90%;
     background-position-x: 100%;
@@ -19,6 +19,9 @@ header{
     margin-right: -40px;
     margin-left: 50px;
     width: 10%;
+}
+#logo a{
+  text-decoration: none;
 }
 header #logo{
   transition: all 0.2s ease-in-out;
@@ -47,10 +50,16 @@ header #logo{
   display: none;  
 }
 h3{
-    font-size: x-large;
-    font-family:sans-serif;
-    color: #242491;
-    padding-top: 40px;
+  font-family: "grape-regular";
+  font-size: 50px;
+  color: #121274;
+  padding-top: 30px;
+}
+h3 a{
+  text-decoration: none;
+  font-family: "grape-regular";
+  font-size: 50px;
+  color: #121274;
 }
 :root{
     --hauteur-menu: 60px;
@@ -150,14 +159,32 @@ nav > ul {
   .menu-deroulant:hover > .sous-menu {
     animation: apparitionSousMenu 1s forwards;
   }
+.connexion_inscription{
+  display: flex;
+  flex-direction: row;
+}
 .connexion_inscription a{
   text-decoration: none;
-  color: rgb(15, 10, 108);
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.connexion{
+  border: none;
+  border-radius: 55px;
+  background-color: #3cf9f9b0;
+  padding: 15px 55px 15px 55px;
   margin-left: 50%;
-  line-height: 2em;
+  margin-top: 0;
+}
+.inscription{
+  border: none;
+  border-radius: 55px;
+  background-color: #6cfffd90;
+  padding: 15px 55px 15px 55px;
+  margin-left: 10%;
 }
 .soleil{
-      margin-top: -80px;
+      margin-top: -92px;
       float: right;
       width: 20%;
       height: 80%;
@@ -165,6 +192,8 @@ nav > ul {
       opacity: 0.9;
 }
 header p{
+     font-family: "AnekOdia";
+     font-weight: 300;
       margin-top: 10px;
       font-size: 22px;
       line-height: 2em;
@@ -178,10 +207,9 @@ form{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 10px;
   padding-top: 10px;
-  padding-bottom: 1%;
-  margin-bottom: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
   background-color: rgba(33, 178, 210, 0.582);
   width: 100%;
   z-index:1;
@@ -215,6 +243,7 @@ button:hover{
 }
 
 #slider{
+  margin-top: 0px;
     height: 480px;
   }
   #slider { 
@@ -273,28 +302,32 @@ button:hover{
   
     
 }
-
 .carte{
     padding: 10px;
     border-radius: 20px;
     list-style-type: none;
     -webkit-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
--moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+    -moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+    box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+    transition: -webkit-transform 1s;
+}
+.carte:hover{
+  transform: scale(1.10);
 }
 
 .imbattables li{
     margin-left: 170px;
 }
-
-
+.imbattables p{
+  font-family: "AnekOdia";
+  font-weight: 500;
+}
 .photo{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 350px;
     height: 200px;
 }
-
 
 .promo{
     margin-top: -200px;
@@ -342,13 +375,13 @@ button:hover{
 
 .bouton-bleu:hover{
     transition: 2ms;
-    transform: scale(1.05);
-    
+    transform: scale(1.05);   
 }
-
-
-
+table th{
+  font-family: "AnekOdia";
+}
 table{
+ 
     border-collapse:collapse;
     display: inline;
     margin-left: 200px;
@@ -356,59 +389,70 @@ table{
     position: absolute;
     transform: translate(-110px);
     background-color: #D9F8FF;
+  }
+  .derniere-minute{
+    background-image: url("beach.jpg");
+    background-position-y: 50%;
+    background-position-x: 60%;
 }
-
 table caption{
+  font-family: "AnekOdia";
     margin-bottom: 32px;
 }
-
 .premiere-ligne{
+  font-family: "AnekOdia";
     border-top: none;
 }
 
 .famille1{
+  font-family: "AnekOdia";
     width: 36%;
     display: block;
 }
 
 .famille2{
+  font-family: "AnekOdia";
     width: 36%;
     display: inline;
     margin-bottom: 60px;
 }
 
 .tableau-acceuil{
+  font-family: "AnekOdia";
     margin-left: 100px;
 }
-
-
-
-
 footer{
     width: 100%;
     display:flex;
-    background-color: #1ec5ba
+    background-image: url("fond_footer.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 90%;
+    
 }
 
 .nous{
     
-   
+   font-family: "AnekOdia";
     font-size: 20px;
     margin-top: 10px;
     margin-left: 200px;
 }
 
 .nous p{
-    color: aliceblue;
+  font-family: "AnekOdia";
+    color: rgb(255, 255, 255);
     padding-top: 20px;
 }
 
 .nous p a{
+  font-family: "AnekOdia";
     text-decoration: none;
     color: aliceblue;
 }
 
 .mentions{
+  font-family: "AnekOdia";
     width: 20%;
     display: block;
     font-size: 20px;
@@ -452,3 +496,490 @@ footer{
     width: 60%;
     transform: translateX(20px);
 }
+
+/** page hôtel jumbo**/
+.conteneur_prix{
+    margin-top: -450px;
+    float: right;
+    margin-right: 6%;
+    line-height: 3em;
+}
+.activités{
+    padding-top: 20px;
+    width: 80%;
+}
+.section1 p{
+    padding-bottom: 50px;
+    margin-left: 80%;
+    font-size: 40px;
+}
+.section1 button{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    margin-left: 30%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+button:hover{
+    transform:scale(1.05);
+    transition: 2ms;
+}
+.conteneur_photos img {
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    width: 270px;
+    margin-left: 1%;
+}
+.image1{
+  margin-top: 4%;
+    transition-delay: 1s;
+    transition: -webkit-transform 1s;
+}
+.image1:active{
+  margin-top: -10px;
+  -webkit-transform: scale (2.5);
+  -moz-transform: scale (3.5);
+  -ms-transform: scale (4);
+  transform: scale(3.05) translate(220px,85px);
+  width: 310px;
+  height: 200px;
+}
+.image2{
+  transition-delay: 1s;
+  transition: -webkit-transform 1s;
+}
+.image2:active{
+  margin-top: -50px;
+  -webkit-transform: scale (2.5);
+  -moz-transform: scale (3.5);
+  -ms-transform: scale (4);
+  transform: scale(3) translate(224px,15px);
+  width: 310px;
+  height: 200px;
+}
+.image3{
+  transition-delay: 1s;
+  transition: -webkit-transform 1s;
+}
+.image3:active{
+  margin-top: -50px;
+  -webkit-transform: scale (2.5);
+  -moz-transform: scale (3.5);
+  -ms-transform: scale (4);
+  transform: scale(3) translate(224px,-57px);
+  width: 310px;
+  height: 200px;
+}
+.photo_hôtel{
+    margin-top: -625px;
+    margin-left: 20%;
+}
+.photo_hôtel img{
+    width: 61%;
+}
+.section2 h1{
+  font-family: "AnekOdia";
+  margin-top: 50px;
+  margin-left: 5%;
+   font-size: 20px;
+}
+.article1{
+    font-family: "AnekOdia";
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 5%;
+    line-height: 2em;
+}
+.article2{
+    font-family:"AnekOdia";
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 8%;
+    line-height: 2em;
+}
+.tableau_hotel1{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.476);
+}
+.date_sejour_hotel{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 0;
+    background-color: #ffffffa5;
+}
+.info_hotel, .info_hotel1{
+  font-family: "AnekOdia";
+  font-weight: 800;
+    padding-top: 10px;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.476);
+    border-right: 1px solid rgba(0, 0, 0, 0.372);
+    padding-bottom: 0px;
+}
+.info_hotel1{
+    border-left: none;
+}
+.reserver{
+  font-family: "AnekOdia";
+  font-weight: 800;
+  padding-left: 20px;
+  padding-right: 20px;
+    border: none;
+}
+.section3{
+    background-image: url("plage_fond.jpg");
+    width: 100%;
+    height: 1080px;
+    background-repeat: no-repeat;
+}
+.section3 h4{
+  font-family: "AnekOdia";
+  font-weight: 800;
+    font-size: 30px;
+    padding-top: 50px;
+    margin-left: 25%;
+}
+.section3 button{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "AnekOdia";
+    font-weight: 500;
+    padding: 20px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    margin-left: 5%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+button:hover{
+    transform:scale(1.05);
+    transition: 2ms;
+}
+.formalité{
+  font-family: "AnekOdia";
+  font-weight: 400;
+    float: right;
+    margin-top: -900px;
+    margin-right: 7%;
+    margin:4px, 4px;
+    padding:8px;
+    background-color: rgba(236, 236, 236, 0.757);
+    width: 500px;
+    height: 710px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    font-size: medium;
+}
+.section3 .button_offres{
+  margin-left: 70%;
+}
+.button_offres{
+  border: none;
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 55px 15px 55px;
+  background-color: rgb(0, 50, 252);
+  box-shadow: 1px 2px 3px 1px #0101ff;
+  margin-top: 845px;
+}
+.button_offres a{
+  color: #fafafa;
+  text-decoration: none;
+  text-align: center;
+}
+.page_hotel_footer{
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-image: url("fond_footer.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 90%;
+}
+
+
+/** page camping**/
+.conteneur_prix_info{
+    margin-top: -580px;
+    float: right;
+    margin-left: 70%;
+    line-height: 3em;
+}
+.section5 span{
+  padding-bottom: 50px;
+    margin-left: 60%;
+    margin-right: 10%;
+    font-size: 40px;
+}
+.formalité_camping{
+  font-family: "AnekOdia";
+  font-weight: 400;
+    float: right;
+    margin-top: 10px;
+    margin-right: 7%;
+    margin:4px, 4px;
+    padding:8px;
+    background-color: rgba(236, 236, 236, 0.757);
+    width: 500px;
+    height: 710px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    font-size: medium;
+}
+.section5 p{
+  padding-top: 20%;
+  padding-bottom: 50px;
+  margin-left: 2%;
+  margin-right: 6%;
+  font-size: 18px;
+}
+.section5 button{
+  border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    margin-top: 10%;
+    margin-left: 30%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+.conteneur_photos_camping img {
+    
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 270px;
+  margin-left: 1%;
+}
+.camping1{
+  margin-top: -60px;
+  transition-delay: 1s;
+  transition: -webkit-transform 1s;
+}
+.camping1:active{
+-webkit-transform: scale (2.5);
+-moz-transform: scale (3.5);
+-ms-transform: scale (4);
+transform: scale(3.05) translate(211px,73.9px);
+width: 275px;
+height: 210px;
+}
+.camping2{
+transition-delay: 1s;
+transition: -webkit-transform 1s;
+}
+.camping2:active{
+margin-top: -50px;
+-webkit-transform: scale (2.5);
+-moz-transform: scale (3.5);
+-ms-transform: scale (4);
+transform: scale(3) translate(213.7px,1px);
+width:279px;
+height: 210px;
+}
+.camping3{
+transition-delay: 1s;
+transition: -webkit-transform 1s;
+}
+.camping3:active{
+margin-top: -50px;
+-webkit-transform: scale (2.5);
+-moz-transform: scale (3.5);
+-ms-transform: scale (4);
+transform: scale(3) translate(213.7px,-67px);
+width: 280px;
+height: 210px;
+}
+.photo_camping{
+  margin-top: -625px;
+  margin-left: 20%;
+}
+.photo_camping img{
+  width: 55%;
+}
+.section6 h1{
+    padding-top: 100px;
+    margin-left: 4%;
+  }
+.tableau_camping{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.476);
+}
+.date_sejour_camping{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 0;
+    background-color: #ffffffa5;
+}
+.info_camping, .info_camping1{
+    font-family: "AnekOdia";
+    font-weight: 800;
+    padding-top: 10px;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.476);
+    border-right: 1px solid rgba(0, 0, 0, 0.372);
+    padding-bottom: 0px;
+}
+.info_camping1{
+    border-left: none;
+}
+.reserver{
+  font-family: "AnekOdia";
+  font-weight: 800;
+  padding-left: 20px;
+  padding-right: 20px;
+    border: none;
+}
+.section5{
+  margin-top: 150px;
+}
+
+  .section7{
+  background-image: url("fond_camping.jpg");
+  width: 100%;
+  height: 1200px;
+  background-repeat: no-repeat;
+}
+  .tableau_camping1{
+    margin-top: 10%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.476);
+  }
+  .tableau_camping{
+    border-bottom: none;
+  }
+  .date_sejour_camping{
+      width: 50%;
+      margin-top: 200px;
+      margin-left: 10%;
+      padding: 0;
+      background-color: #ffffffa5;
+  }
+  .info_camping, .info_camping{
+    font-family: "AnekOdia";
+    font-weight: 800;
+      padding-top: 10px;
+      border-bottom: none;
+      border-top: none;
+      border-left: 1px solid rgba(0, 0, 0, 0.476);
+      border-right: 1px solid rgba(0, 0, 0, 0.372);
+      padding-bottom: 0px;
+  }
+  .info_camping1{
+      border-left: none;
+  }
+  .reserver{
+    font-family: "AnekOdia";
+    font-weight: 800;
+    padding-left: 20px;
+    padding-right: 20px;
+      border: none;
+  }
+.section7 button{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "AnekOdia";
+    font-weight: 500;
+    padding: 20px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    margin-left: 5%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+button:hover{
+    transform:scale(1.05);
+    transition: 2ms;
+}
+.formalité_camping{
+    font-family: "AnekOdia";
+    font-weight: 400;
+    float: right;
+    margin-top: -980px;
+    margin-right: 7%;
+    margin:4px, 4px;
+    padding:8px;
+    background-color: rgba(236, 236, 236, 0.757);
+    width: 500px;
+    height: 710px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    font-size: medium;
+}
+
+.section7 .button_offres_camping{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    box-shadow: 1px 2px 3px 1px #0101ff;
+    margin-top: 1050px;
+    margin-left: 70%;
+   
+  }
+  .button_offres_camping a{
+    color: #fafafa;
+    text-decoration: none;
+    text-align: center;
+  }
+  .page_camping_footer{
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-image: url("fond_footer.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 90%;
+    margin-bottom: -2000px;
+  }
+
+
+  .voir-plus-camping{
+    border: none;
+    margin-top: 50px;
+    margin-left: 750px;
+    margin-bottom: 100px;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+/** page mentions légales**/
+.mentions_légales{
+  font-family: "AnekOdia";
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #fbf9f9c1;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+.section9{
+  padding-top: 50px;
+  background-image: url("fond_mentions.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+
+

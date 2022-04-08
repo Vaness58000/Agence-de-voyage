@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <title>Online Voyage</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html"><img class="logo" src="img/logo4.png" alt="logo soleil mer"></a> </div><h3><a href="index.html">OnlineVoyages</a> </h3>  <img class="soleil" src="img/soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
+      
+        <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
+        <nav>
+            <ul class="menu-deroulant">
+                <li class="menu-deroulant"><a href="#">Séjour</a>
+                    <ul class="sous-menu">
+                        <li><a href="toutes les croisières.html">Croisière</a></li>
+                        <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
+                        <li><a href="page camping complet.html">Camping</a></li>
+                        <li><a href="#">Séjour en Club</a></li>
+                        
+                    </ul>
+                </li>
+             <li class="menu-deroulant"><a href="#">Week-end</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Thalasso/Bien-être</a></li>
+                        <li><a href="#">Découverte/aventure</a></li>
+                    </ul>
+                        <li class="menu-deroulant"><a href="#">Bons Plans</a>
+                            <ul class="sous-menu">
+                                <li><a href="#">Séjour</a></li>
+                                <li><a href="#">Week-end</a></li>
+                            </ul>
+                </li>
+            </ul>
+    </nav>
+        <form>
+            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+            <input type="date" name=Date class="date" placeholder="14/04/2022">
+            <select name="nombre de jour" id="voyage">
+                        <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                        <option value="camping">2 semaines (12 à 19 jours)</option>
+                        <option value="croisière">Séjour long (20 jours et plus)</option>
+                      </select>  
+            <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                <option value="séjour_hôtel">Séjours tout compris</option>
+                <option value="séjour_club">Séjours Famille</option>
+                <option value="croisière">Croisière</option>
+                <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                <option value="camping">Camping</option>
+                <option value="camping">Séjours Thalasso/Bien-être</option>
+              </select>
+              <button>Rechercher</button>
+          </form>
+    </header>
+
+        <section class="section1">
+            <div class="conteneur_photos">
+            
+                <img class="image1" src="img/chambre hotel.jpg" alt="chambre de l'hôtel">
+                <img class="image2" src="img/resto hotel.jfif" alt="restaurant de l'hôtel">
+                <img class="image3" src="img/plage hotel.jpg" alt="plage de l'hôtel">
+
+                </div>
+                <div class="photo_hôtel">    
+                    <img src="img/photo piscine hotel.jpg" alt="piscine extérieur de l'hôtel">
+                </div>
+            <div class="conteneur_prix">
+                <h1>Andalousie<br>
+                Hôtel Jumbo Palia Las Palomas 4*</h1>
+                <img class="activités" src="img/hotel activité.jpg" alt="activité proposé par l'hôtel">
+                <p>537€</p>
+                <button>Réserver</button>
+            </div>
+        </section>
+            <section class="section2">
+                <h1>VOUS ALLEZ ADORER</h1><article class="article1"> Nombreuses activités pour les adultes et enfants. <br>Proche du quatier de pêcheurs de la Carihuela. <br>Idéal pour les familles !</article>
+                <h1>NOUS VOUS ACCUEILLONS</h1><article class="article2">Située au sud de l'Espagne, l'Andalousie est une région attirante par ses contrastes et ses mélanges culturels. Entre villages blancs et mer bleutée, les montagnes ondulent et longent la Costa del Sol qui brille au soleil. Ne manquez pas de découvrir la province de Malaga, une des premières destinations touristiques mondiales attirante grâce à ses magnifiques plages de sable. </article>
+        </section>
+            <section class="section3">
+                <h4>Avril 2022</h4>
+                <table  class="date_sejour_hotel">
+                 
+                    <tr class="tableau_hotel1">
+                        <th class="info_hotel1">Date de départ</th>
+                        <th class="info_hotel">Date de retour</th>
+                        <th class="info_hotel">Durée</th>
+                        <th class="info_hotel">Prix TTC/PERS.</th>
+                        <th class="reserver">Paiement sécurisé</th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_hotel1">samedi 23 avril </th>
+                        <th class="info_hotel">Jeudi 28 avril</th>
+                        <th class="info_hotel">6J/5N</th>
+                        <th class="info_hotel">537€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_hotel1"></th>
+                        <th class="info_hotel">Vendredi 29 avril</th>
+                        <th class="info_hotel" >7J/6N</th>
+                        <th class="info_hotel">630€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_hotel1"></th>
+                        <th class="info_hotel">Samedi 30 avril</th>
+                        <th class="info_hotel">8J/7N</th>
+                        <th class="info_hotel">694€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_hotel1"></th>
+                        <th class="info_hotel">Dimanche 1er mai</th>
+                        <th class="info_hotel">9J/8N</th>
+                        <th class="info_hotel">975€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_hotel1"></th>
+                        <th class="info_hotel">Lundi 2 mai</th>
+                        <th class="info_hotel">10J/9N</th>
+                        <th class="info_hotel">897€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_hotel1"></th>
+                        <th class="info_hotel">Mardi 3 mai</th>
+                        <th class="info_hotel">11J/10N</th>
+                        <th class="info_hotel">931€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                </table>
+               <button class="button_offres"><a href="tout les hôtels.html">Voir d'autres offres</a></button>
+            </section>
+                <section class="section4">
+                    
+                    <div class="formalité">
+                        <h2>Formalités</h2>
+                        <br><br>
+                        Voyageurs vaccinés :<br>
+                        Bonne nouvelle : il vous faudra seulement justifier de votre certificat de vaccination complet.<br>
+                        Un certificat de vaccination complet suffit (dernière dose reçue au moins 14 jours avant le départ pour les vaccins Pfizer, Moderna et AstraZeneca et au moins 28 jours avant le départ pour le vaccin Johnson & Johnson).
+                        <br><br>
+                        Voyageurs non vaccinés (ou dont le cycle de vaccination est en cours)
+                        Départ depuis la France : Le résultat négatif d'un test, réalisé dans les 24 heures (si antigénique) ou 72 heures (si PCR) avant l'embarquement, est exigé pour les voyageurs à partir de 12 ans.<br><br>
+                        Voyageurs guéris du coronavirus : le résultat d'un test PCR ou antigénique positif attestant de la guérison de la Covid-19, datant de plus de 11 jours et de moins de 6 mois est également accepté.
+                        Retour en France : un test PCR de moins de 72h ou antigénique négatif de moins de 48h est exigé pour les voyageurs à partir de 12 ans.
+                        <br><br>
+                        IMPORTANT :<br><br>
+                        - Les voyageurs français entrant sur le territoire espagnol, y compris les îles Canaries (Fuerteventura, Lanzarote, Grande Canarie, Tenerife) et les îles Baléares (Majorque, Minorque et Ibiza) doivent compléter avant leur départ un formulaire sanitaire téléchargeable en cliquant sur le lien suivant : www.spth.gob.es, ou en utilisant l'application gratuite ESPAGNE TRAVEL HEALTH-SpTH.
+                        Une fois le formulaire rempli, le passager obtiendra un code QR qui devra être présenté à l'arrivée en Espagne. Les formulaires en version imprimée ne sont pas acceptés.<br><br>
+                        - Pour entrer sur le territoire français, tous les voyageurs, vaccinés ou non, devront également s'enregistrer sur le portail des fiches de traçabilité européennes : https://app.euplf.eu/#/
+                        <br><br>
+                        Les voyageurs à destination des Canaries sont par ailleurs vivement incités à télécharger l'application Radar COVID-19 sur leur appareil mobile, qu'ils devront maintenir active pendant toute la durée de leur séjour aux Canaries et pendant au moins 15 jours après leur retour dans leur lieu d'origine.
+                        <br><br>
+                        IMPORTANT<br><br>
+                        En cas d'un vol avec escale, nous vous informons que vous devrez être conforme aux formalités sanitaires du pays où se trouve votre escale ainsi que votre destination finale.
+                        Les modalités pour chaque pays sont consultables sur le site https://www.diplomatie.gouv.fr/fr/. L'actualité évoluant très régulièrement, nous vous invitons à consulter ce lien avant votre départ.
+                        <br><br>
+                        Pour tout départ d'un aéroport frontalier (Belgique, Luxembourg, Pays-Bas, Allemagne, Suisse ou Espagne...), veuillez vous référer aux sites officiels des ministères des pays concernés pour les conditions de départ et de retour.
+                        <br><br>
+                        Concernant l'éventuel impact du Coronavirus sur votre séjour, nous vous invitons à consulter la page ci-dessous du site officiel France Diplomatie :
+                        https://www.diplomatie.gouv.fr/fr/le-ministere-et-son-reseau/actualites-du-ministere/informations-coronavirus-covid-19/coronavirus-les-reponses-a-vos-questions/article/coronavirus-les-reponses-a-vos-questions
+                        <br><br>
+                        Ressortissants français (adultes, bébés et enfants) :
+                        Passeport ou carte nationale d'identité en cours de validité.
+                        <br><br>
+                        Les règles relatives au franchissement des frontières propres à chaque pays étant amenées à évoluer, il est vivement conseillé de se reporter à la rubrique "conseils aux voyageurs" du site France Diplomatie,https://www.diplomatie.gouv.fr/.
+                        <br><br>
+                        Les mineurs voyageant seuls ou avec une personne ne disposant pas de l'autorité parentale doivent être munis d'une autorisation de sortie de territoire.
+                        <br><br>
+                        Ressortissants étrangers et binationaux devront être en conformité avec les différentes réglementations en vigueur, selon leur nationalité et devront s'informer auprès de leur consulat.<br>
+                        POUR INFO<br><br>
+                        Tous horaires de vols communiqués avant réception de votre convocation ne peuvent l'être qu'à titre indicatif.<br>
+                        Dans tous les cas, il est impératif que vous attendiez la réception de la convocation comprenant les horaires définitifs avant d'organiser votre voyage.
+                        Nous ne pourrons être tenus responsables d'un changement d'horaires entre votre réservation et la convocation définitive.
+                        Nous vous informons que, pour ce séjour, les vols sont susceptibles de faire l'objet d'une escale.
+                        <br><br>
+                        La convocation à l'aéroport, les horaires en heures locales et le plan de vol définitif vous seront communiqués dans les 48h avant le départ.
+                        Nous vous signalons que l'aéroport d'arrivée à Paris peut être différent de l'aéroport de départ.<br><br>
+                        Prestations à bord : pour vous garantir un voyage au meilleur prix, les collations et boissons ne sont pas comprises au service à bord des avions lors des vols aller et retour ; nous vous offrons la possibilité de choisir en toute liberté vos collations et boissons proposés à la carte, à régler directement auprès de l'équipage au cours du vol (paiement en espèces et en euros uniquement).
+                        <br><br>
+                        Personnes à mobilité réduite : suite à l'entrée en vigueur du règlement européen EU 1107/2006, toute demande d'assistance (chaise roulante, etc.) doit parvenir à la compagnie aérienne au plus tard 48h avant la date de départ.
+                        <br><br>
+                        PRÉCISION DESCRIPTIF
+                        Les photos utilisées pour présenter les hôtels et la destination le sont à titre indicatif et non-contractuel. Concernant votre logement, l'hôtel offre différentes configurations et décorations. La chambre allouée lors de votre arrivée pourra être ainsi différente de celle figurant en photo sur le présent descriptif.
+                        <br><br>
+                        Votre séjour est assuré par le tour opérateur suivant :
+                        Plein Vent.
+                    </div>
+                </section>
+                
+                <footer class="page_hotel_footer">
+                    <img title="logo" src="./img/logo 4.png" alt="logo">
+                    <div class="nous">
+                        <p>
+                           <a href="#">À propos</a>
+                        </p>
+                        <p>qui sommes-nous ?</p>
+                        <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+                    </div>
+                    <div class="mentions">
+                        <p>
+                            <a href="#">Conditions</a>
+                        </p>
+                        <p>
+                            <a href="#">CGV</a>
+                        </p>
+                        <p> 
+                           <a href="#">Protection de vie privé</a>
+                        </p>
+                        <p>
+                            <a href="mention legale.html"> légales</a>
+                        </p>
+                    </div>
+                    <div class="paiement-securisé">
+                        <p class="info">INFO ET RESERVATION</p>
+                        <p class="numero">0862 69 70 71</p>
+                        <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+                    </div>
+                </footer>
+    </body>
+</html>
