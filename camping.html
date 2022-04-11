@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <title>Online Voyage</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html"><img class="logo" src="img/logo2.png" alt="logo valise"><img class="logo-nom" src="img/logo NOM.png"></a> </div>
+        <img class="bulle" src="img/bulle.png">   <p>Infos et réservation<br>0862 69 70 71 </p>
+      
+        <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
+        <nav>
+            <ul class="menu-deroulant">
+                <li class="menu-deroulant"><a href="#">Séjour</a>
+                    <ul class="sous-menu">
+                        <li><a href="toutes les croisières.html">Croisière</a></li>
+                        <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
+                        <li><a href="page camping complet.html">Camping</a></li>
+                        <li><a href="#">Séjour en Club</a></li>
+                        
+                    </ul>
+                </li>
+             <li class="menu-deroulant"><a href="#">Week-end</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Thalasso/Bien-être</a></li>
+                        <li><a href="#">Découverte/aventure</a></li>
+                    </ul>
+                        <li class="menu-deroulant"><a href="#">Bons Plans</a>
+                            <ul class="sous-menu">
+                                <li><a href="#">Séjour</a></li>
+                                <li><a href="#">Week-end</a></li>
+                            </ul>
+                </li>
+            </ul>
+        </nav>
+       
+        <form>
+            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+            <input type="date" name=Date class="date" placeholder="14/04/2022">
+            <select name="nombre de jour" id="voyage">
+                        <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                        <option value="camping">2 semaines (12 à 19 jours)</option>
+                        <option value="croisière">Séjour long (20 jours et plus)</option>
+                      </select>  
+            <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                <option value="séjour_hôtel">Séjours tout compris</option>
+                <option value="séjour_club">Séjours Famille</option>
+                <option value="croisière">Croisière</option>
+                <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                <option value="camping">Camping</option>
+                <option value="camping">Séjours Thalasso/Bien-être</option>
+              </select>
+              <button>Rechercher</button>
+          </form>
+    </header>
+        <section class="section5">
+            <div class="conteneur_photos_camping">
+            
+                <img class="camping1" src="img/camping3.jpg" alt="chambre de l'hôtel">
+                <img class="camping2" src="img/camping2.jpg" alt="restaurant de l'hôtel">
+                <img class="camping3" src="img/camping1.jpg" alt="plage de l'hôtel">
+
+            </div>
+            <div class="photo_camping">    
+                    <img src="img/camping.jfif" alt="piscine camping">
+                </div>
+            <div class="conteneur_prix_info">
+                <h1>  France Cote Atlantique <br>
+                Camping Club Lou Pignada Landes 5*</h1>
+                <p>Chef de Centre à votre disposition tout au long de votre séjour
+                    Club enfants ouvert pendant les vacances scolaires.
+                    Parking gratuit</p>
+                <span>75€</span>
+                <button>Réserver</button>
+            </div>
+        </section>
+            <section class="section6">
+                <h1>VOUS ALLEZ ADORER</h1><article class="article1"> Cadre naturel exceptionnel
+                    Proximité avec les plages
+                    Situation idéale pour la découverte des Landes</article>
+                <article class="article2">- Le séjour en logement seul.
+                    - Les charges et taxes (sauf taxe de séjour).<br>
+                    - Les services, loisirs et activités mentionnés sans supplément.<br>
+                    - L'animation en journée et en soirée.<br>
+                    - L'accueil en club pour les enfants à partir de 4 ans et jusqu'à 12 ans (juillet/août).</article>
+        </section>
+            <section class="section7">
+                <table  class="date_sejour_camping">
+                 
+                    <tr class="tableau_camping1">
+                        <th class="info_camping1">Date de départ</th>
+                        <th class="info_camping">Date de retour</th>
+                        <th class="info_camping">Durée</th>
+                        <th class="info_camping">Prix TTC/PERS.</th>
+                        <th class="reserver">Paiement sécurisé</th>
+                    </tr>
+                    <tr class="tableau_camping">
+                        <th class="info_camping1">Dimanche 17 avril </th>
+                        <th class="info_camping">Dimanche 24 avril</th>
+                        <th class="info_camping">8J/7N</th>
+                        <th class="info_camping">75€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_camping">
+                        <th class="info_camping1">Dimanche 24 avril</th>
+                        <th class="info_camping">Dimanche 1er mai</th>
+                        <th class="info_camping" >8J/7N</th>
+                        <th class="info_camping">75€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_camping">
+                        <th class="info_camping1">Dimanche 1er mai</th>
+                        <th class="info_camping">Dimanche 8 mai</th>
+                        <th class="info_camping">8J/7N</th>
+                        <th class="info_camping">75€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_camping">
+                        <th class="info_camping1">Dimanche 8 mai</th>
+                        <th class="info_camping">Dimanche 15 mai</th>
+                        <th class="info_camping">8J/7N</th>
+                        <th class="info_camping">75€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_camping1">Dimanche 15 mai</th>
+                        <th class="info_camping">Dimanche 22 mai</th>
+                        <th class="info_camping">8J/7N</th>
+                        <th class="info_camping">75€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                    <tr class="tableau_hotel">
+                        <th class="info_camping1">Dimanche 22 mai</th>
+                        <th class="info_camping">Dimanche 29 mai</th>
+                        <th class="info_camping">8J/7N</th>
+                        <th class="info_camping">75€</th>
+                        <th class="reserver"><button>Réserver</button></th>
+                    </tr>
+                </table>
+                <button class="button_offres_camping"><a href="page camping complet.html">Voir d'autres offres</a></button>
+            </section>
+
+                <section class="section8">
+                    
+                    <div class="formalité_camping">
+                        <h2>SITUATION</h2>
+                         <br><br>                 
+                            Situé à 3 km de Messanges, petite commune française située dans le département des Landes en région Nouvelle-Aquitaine. Situation idéale au cœur des forêts landaises et à 2,5 km de la plage. Vous pouvez découvrir la région en vélo à travers les pinèdes, à 15 min seulement du charmant village landais de Vieux-Boucau et de Moliets-et-Maa. Vous trouverez également Hossegor et Capreton à 20 km du camping. <br><br>
+
+                            Le Fram Camping Club 5* vous accueil au cœur de la forêt des Landes, sur un domaine de 9 hectares et à proximité des plages, avec 430 emplacements. Le camping est récompensé par de nombreux Label : Ecolabel™ (vacances respectueuses de la nature), Qualité Tourisme™ (accueil d'excellence), Vélodyssée™ (garantit des kilomètres de pistes cyclables et le meilleur accueil aux cyclotouristes). <br><br>
+
+                            Sur place, vous profiterez d'un grand parc aquatique entièrement chauffé, constitué de 2 bassins extérieures (dont 1 avec 3 toboggans) et 2 pataugeoires. 1 piscine intérieure chauffée. Toutes les piscines sont aménagées. <br><br>
+
+                            À PROXIMITÉ :
+                            <br>
+                            - Supermarché et station-service à 1 km.<br>
+                            - Centres de Messanges et Vieux-Boucau (commerces, restaurants) à 3 km.<br>
+                            - Piste cyclable La Vélodyssée (différentes pistes entre chemins forestiers et voies vertes) en accès direct<br>
+                            - Plages de sable (école de surf, sports nautiques) : dès 2 km<br>
+                            - Village landais de Vieux-Boucau : 3 km<br>
+                            - Lac marin de Port d'Albret, plage aménagée : 4 km, pôle nautique de Soustons-Plage : 5 km<br>
+                            - Dinosaures parc à Soustons : 10 km.<br>
+                            - Courant d'Huchet, l'Amazonie landaise : 12 km<br>
+                            - Parc aquatique à Seignosse : 15 km<br>
+                            - Parc animalier/zoo de Labenne : 30 km<br>
+                            - Dax, ville thermale, arènes, casino : 35 km<br>
+                            - Bayonne, portes du Pays Basque : 45 km <br><br>
+                            LOGEMENT<br>
+                            Le camping dispose de 430 emplacements répartis dans un environnement arboré et sans voiture. <br><br>
+
+                            Lors de votre séjour, vous serez logés en Mobil home Resasol avec 2 chambres (29 m²) :<br>
+                            - Deux chambres séparées : 1 chambre avec 1 lit double de 140x190 et 1 chambre avec 2 lits simples de 80x190 ou 2 lits superposés.<br>
+                            - Cuisine équipée avec réfrigérateur/congélateur, plaque de cuisson, cafetière électrique, grille-pain, micro-onde/grill, vaisselle.<br>
+                            - Séjour avec canapé.<br>
+                            - Petit chauffage individuel.<br>
+                            - Salle d'eau avec douche et lavabo.<br>
+                            - Toilette séparées.<br>
+                            - Terrasse intégrée de 11 m² en bois aménagée de chaises longue, salon de jardin et plancha.
+                            <br><br>
+                            Capacité maximum : <br>4 adultes ou 2 adultes + 2 enfants ou 1 adulte + 3 enfants.
+                            <br><br>
+                            Avec supplément :<br>
+                            - Wi-FI : 25€/semaine/appareil (non interchangeable), autres prix/jour et famille.<br>
+                            - TV : TV (35€/semaine).<br>
+
+                            - Logement en Mobil Home Resasol 3 chambres (34 m²) : + terrasse couverte de 18 m², 3 chambres (1 lit double (130x190 ou 140x190), 2 lits simples (70x190 ou 80x190), 2 lits simples ou 2 lits superposés (80x190)).
+                            Capacité maximum : 4 adultes + 2 enfants.<br>
+
+                            - Logement en Chalet 3 chambres (35 m²) : terrasse couvert de 9 m², climatisation, lave vaisselle, 3 chambres (1 lit double (140x190), 1 lit double 140x190, 2 lits superposés 90x190).
+                            Capacité : 4 adultes + 2 enfants.<br><br>
+                            BON À SAVOIR<br>
+                            - Taxe de séjour incluse.<br>
+                            - Arrivées à partir de 16 h, départs jusqu'à 10 h.<br>
+                            - 7 nuits arrivée le dimanche.<br>
+                            - Réception ouverte 7 jours/7 de 8h30 à 20h30 en juillet/août. avril, mai, juin et septembre : lundi au vendredi ouvert de 9h à 12h et de 14h30 à 18h30, samedi et dimanche ouverte de 9h à 18h30.<br>
+                            - Accueil de nuit jusqu'à 23h, au delà, sur rendez-vous.<br>
+                            - Parking sur place. Parking est sécurisé par un système de barrière avec lecture de plaque d'immatriculation. Vous pourrez accéder à votre voiture et rentrer/sortir du parking 24h/24. Il est accessible uniquement au client du camping Lou Pignada. Une passerelle piétonne relie le parking au camping. 1 voiture/séjour. 1 véhicule supplémentaire (sur parking extérieur fermé) en supplément.<br>
+                            - Documentation sur les activités touristique disponible à la réception.<br>
+                            - Coffre-fort est disponible en réception au tarif de 4€/jour ou 25€/semaine<br>
+                            - Caution 200€ pour tout type d'hébergement + un caution ménage de 150€ pour les hébergements 2 chambres et 200€ pour les 3 chambres.<br>
+                            - Capacité maximum 6 adultes en Chalet et Mobil home Resasol (3 chambres), nous vous conseillons cependant 4 adultes + 2 enfants.<br>
+                            - Le camping n'accepte pas les animaux de compagnie dans les catégories de logements proposés.<br><br>
+
+                            En option, à réserver à l'inscription payable sur place :<br>
+                            - Forfait ménage de fin de séjour : 150-200€/logement (selon type de logement).<br>
+                            - Location de draps : 19€/lit.<br>
+                            - Kit de serviette toilette : 12€/kit.<br>
+                            - Kit bébé (chaise haute et lit bébé) : 29€/séjour.
+                            <br><br>
+                            NB : La catégorie 5* reste relative à la norme camping.<br><br>
+                            RESTAURATION<br>
+                            Lors de votre séjour vous serez hébergés en logement seul.
+                            <br><br>
+                            Le camping possède un restaurant principal avec terrasse, possibilité de manger sur place, à emporter ou de vous faire livrer vos pizzas sur emplacement, ainsi qu'un snack-bar-glacier à côté du restaurant ouvert toute la saison, et snack à la piscine ouvert en juillet/août.
+                            <br><br>
+                            - Petit déjeuner : 9,50€/jour/personne (1 boisson chaude + 1 viennoiserie + pain/beurre/confiture + 1 jus d'orange).
+                            <br><br>
+                            Avec supplément, bénéficiez de la demi-pension ou la pension complète (à réserver à l'inscription et paiement sur place) :
+                            <br><br>
+                            Demi-pension (à partir de 12 ans) :<br>
+                            Petit déjeuner comprenant 1 boisson chaude + 1 viennoiserie + pain/beurre/confiture + 1 jus d'orange.<br>
+                            Un repas midi ou soir au choix, comprenant entrée + plat chaud ou plat + dessert + 1/4 de vin compris (entrée, plat et dessert du jour à choisir dans la carte des demi pension uniquement).<br><br>
+                            Demi-pension enfant (de 5 à 12 ans) :<br>
+                            Un petit déjeuner comprenant 1 boisson chaude + 1 viennoiserie + 1 jus d'orange.<br>
+                            Un repas midi ou soir au choix comprenant nugget's ou steack haché ou tagliatelles carbonara + glace ou salade de fruit.
+                            25€/adulte, 12€/enfant.
+                            <br><br>
+                            Pension Complète (à partir de 12 ans)<br>
+                            + repas du soir au choix comprenant entrée + plat chaud ou plat + dessert + 1/4 de vin compris (entrée, plat et dessert du jour à choisir dans la carte des demi pension uniquement).<br><br>
+                            Pension Complète Enfant (de 5 à 12 ans)<br>
+                            + repas du soir.
+                            39,5€/adulte, 25€/enfant.
+                            <br><br>
+                            Snacks au snack-bar-glacier: glaces, gaufres, crêpes, paninis...<br><br>
+                            EQUIPEMENTS<br>
+                            - Barbecue en accès libre sur des aires prévues à cet effet (charbon et grille non fournis).<br>
+                            - Laverie : 5€/lavage, 4€/séchage, 1€/dosette.<br>
+                            - Coffre-fort à la réception : 4€/jour et 25€/semaine<br>
+                            - Fax : 2€/envoi, 1€/réception.<br>
+                            - Supérette : ouverte de 8h à 13h et de 15h à 19h (en basse saison), de 7h30 à 21h (en juillet/aout).<br><br>
+                            SPORTS ET LOISIRS<br>
+                            - 2 piscines tempérées aménagées (25°C).<br>
+                            - 3 toboggans : le « kamikaze » et le « fun » (+10 ans), et le « kids » (+3 ans).<br>
+                            - 3 toits-terrasse solarium d'un total de 440 m².<br>
+                            - 1 piscine couverte (28°C).<br>
+                            - Plage à 2,5 km avec navette gratuite de 8 places (6 jours/7 en juillet/août toutes les 20 minutes de 11h à 13h et de 15h30 à 19h, excepté le samedi et jours de pluie).<br>
+                            - Bassin balnéo de 700 m² chauffé, se décomposant (rivière à courant pour bouées 1 ou 2 places, lagon, 6 banquettes anatomiques (massage par air), carré massant (jets de massage air+eau), rivière massante (jets de massage air+eau), 8 jets de massage air-eau, 3 cols de cygne. L'ensemble avec une décoration en rochers avec intégration de cascades.<br>
+                            - Salle de fitness climatisée (ouverte 7j/7 de 10h à midi et de 14h à 17h en juillet/aout, en basse saison ouverte mercredi et dimanche de 10h30 à 12h30).<br>
+                            - City stade.<br>
+                            - Beach volley.<br>
+                            - Beach soccer.<br>
+                            - Volley.<br>
+                            - 2 terrains de pétanque.<br>
+                            - Ping-pong, prêt de raquette 1€.<br>
+                            - Terrain de tennis, prêt de raquette 2€ (avec supplément en juillet/août, sur réservation. 8,50€/heure pour les 4 premières heures réservées, 5€/heure à partir de la 5ème heure réservée).
+                            <br><br>
+                            NB :<br>
+                            Les bassins sont ouverts 7 jours/7, de 10h à 18h hors saison*, et de 10h à 20h en Juillet Août.<br>
+                            Les toboggans fonctionnent tous les week-end de 14h à 17h du 1/4 au 7/6 et du 7/9 au 29/9 et tous les jours de 11h30 à 18h30 du 7/6 au 7/9.<br>
+                            * la piscine est ouverte de l'ouverture du camping jusqu'au 29/9.
+                            Bassin balnéo ouverture prévue en mai 2022.<br><br>
+                            SPORTS ET LOISIRS PAYANTS<br><br>
+                            Avec supplément :<br>
+                            - Spa (hammam, sauna, bain à remous, modelages, soins visages et corps).<br>
+                            - Location de vélo.
+                            <br><br>
+                            A proximité :<br><br>
+                            - Plage de Messanges sud à 2.5 km, accessibles en vélo ou profitez de la navette gratuite (juillet/août, sauf le samedi et jour de pluie), départ toutes les 20 minutes de 11h à 13h, retour toutes les 20 minutes de 15h30 à 19h. Profitez également d'un bus de plage gratuit pour découvrir les plages aux alentours.<br>
+                            - Nombreuses activités nautiques (cours de surf, scooteur des mers, ski nautique, balade en bateau, canoë...)
+                            <br><br>
+                            NB :<br>
+                            - Spa + de 16 ans.<br><br>
+                            ANIMATION<br><br>
+                            L'équipe de pilotes-vacances FRAM et du camping vous propose, 6 jours/7 (en juillet/aout) :<br>
+                            - en journée : activités sportives, ludiques et culturelles (aquadance, tournois divers, fitness…).<br>
+                            - en soirée : lotos, karaoké, jeux et concours. En juillet/août, soirées spectacles, DJ…
+                            <br><br>
+
+                            Animations complètes en journée et soirée :<br><br>
+                            En journée :<br><br>
+                            En juillet/août : remise en forme, aquafun, fitness, abdo-fessiers, stretching, step, tournois de pétanque, de football, de beach-volley, etc..
+                            Hors Saison, le dimanche matin, fitness.
+                            <br><br>
+                            En soirée :<br><br>
+                            Chaque soir de juillet et août, les vacanciers peuvent assister aux soirées et spectacles organisées pour passer de bons moments conviviaux en famille ou entre amis (soirées karaokés, soirées cabarets et les spectacles à thèmes (Brésil, Paris, etc...), concerts live et les soirées disco !)
+                            Hors saison en dehors de la période estivale, les week-ends d'avril à septembre à Messanges sont également animés par l'équipe du camping. Grande soirée des animateurs prévus tous les samedis soirs : mini-disco, soirée Karaoké, soirée grands jeux, soirée Loto...<br><br>
+                            ENFANTS<br><br>
+                            Le camping dispose d'un club enfants et club ados :<br>
+                            - Club Pirate (5-12 ans) 7 jours/7, chasse au trésor, olympiades, activités manuelles etc...<br>
+                            - Club Ados (13-16 ans) 7 jours/7, activités ludiques adaptées.
+                            Heure d'ouverture en haute saison : 9h30-12h et 16h-18h.<br>
+
+                            - 2 pataugeoires tempérées extérieures avec jeux et 1 toboggan (dès 3 ans).
+                            - Mini ferme (poules, cochon, lama, brebis, etc...), accès gratuit directement dans le camping (en juillet/août).<br>
+                            - Mini-disco et dîner-party.<br><br>
+                            SANTÉ ET SÉCURITÉ<br><br>
+                            Avant votre départ, veuillez consulter le site du ministère des Affaires étrangères pour connaître les risques sanitaires éventuels qui peuvent concerner votre destination : https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/
+                            CE PRIX TTC COMPREND
+                            <br><br>
+                            - Le séjour en logement seul.<br>
+                            - Les charges et taxes (sauf taxe de séjour).<br>
+                            - Les services, loisirs et activités mentionnés sans supplément.<br>
+                            - L'animation en journée et en soirée.<br>
+                            - L'accueil en club pour les enfants à partir de 4 ans et jusqu'à 12 ans (juillet/août).<br><br>
+                            CE PRIX TTC NE COMPREND PAS
+                            <br><br>
+                            - Le transport aller/retour.<br>
+                            - Les frais de dossier.<br>
+                            - La caution par logement.<br>
+                            - Les repas et les boissons.<br>
+                            - Les dépenses d'ordre personnel.<br>
+                            - Les activités payantes.<br>
+                            - Les garanties assistance, rapatriement, frais médicaux et d'hospitalisation, assistance juridique et pénale.<br>
+                            - Les assurances annulation, bagages, responsabilité civile.
+                    </div>
+                </section>
+                
+                <footer>
+                    <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
+                    <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS DE VOS VACANCES. POUR VOTRE VOYAGE, ON S'OCCUPE DE TOUT !</p></div>
+                    <div class="nous">
+                        <p style="font-weight: bold; font-size: 20px;">À propos</p>
+                        </p>
+                        <a href="#">Qui sommes-nous ?</a>
+                        <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+                    </div>
+                    <div class="mentions">
+                        
+                            <p style="font-weight: bold; font-size: 20px;">Conditions</p>
+                    
+                        <p>
+                            <a href="#">CGV</a>
+                        </p>
+                        <p> 
+                           <a href="#">Protection de vie privé</a>
+                        </p>
+                        <p>
+                            <a href="mention legale.html"> Mentions légales</a>
+                        </p>
+                    </div>
+                    <div class="paiement-securisé">
+                        <p class="info" style="font-weight: bold;">INFOS ET RESERVATION</p>
+                        <p class="numero" style="font-weight: bold;">0862 69 70 71</p>
+                        <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+                    </div>
+                </footer>
+            </body>
+            
+            </html>

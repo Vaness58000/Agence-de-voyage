@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <title>Online Voyage</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html"><img class="logo" src="img/logo2.png" alt="logo valise"><img class="logo-nom" src="img/logo NOM.png"></a> </div>
+        <img class="bulle" src="img/bulle.png">   <p>Infos et réservation<br>0862 69 70 71 </p>
+      
+        <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
+        <nav>
+            <ul class="menu-deroulant">
+                <li class="menu-deroulant"><a href="#">Séjour</a>
+                    <ul class="sous-menu">
+                        <li><a href="toutes les croisières.html">Croisière</a></li>
+                        <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
+                        <li><a href="page camping complet.html">Camping</a></li>
+                        <li><a href="#">Séjour en Club</a></li>
+                        
+                    </ul>
+                </li>
+             <li class="menu-deroulant"><a href="#">Week-end</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Thalasso/Bien-être</a></li>
+                        <li><a href="#">Découverte/aventure</a></li>
+                    </ul>
+                        <li class="menu-deroulant"><a href="#">Bons Plans</a>
+                            <ul class="sous-menu">
+                                <li><a href="#">Séjour</a></li>
+                                <li><a href="#">Week-end</a></li>
+                            </ul>
+                </li>
+            </ul>
+        </nav>
+       
+        <form>
+            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+            <input type="date" name=Date class="date" placeholder="14/04/2022">
+            <select name="nombre de jour" id="voyage">
+                        <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                        <option value="camping">2 semaines (12 à 19 jours)</option>
+                        <option value="croisière">Séjour long (20 jours et plus)</option>
+                      </select>  
+            <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                <option value="séjour_hôtel">Séjours tout compris</option>
+                <option value="séjour_club">Séjours Famille</option>
+                <option value="croisière">Croisière</option>
+                <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                <option value="camping">Camping</option>
+                <option value="camping">Séjours Thalasso/Bien-être</option>
+              </select>
+              <button>Rechercher</button>
+          </form>
+    </header>
+    <div id="section1">
+    <div id="slider">
+        <figure>
+            <img src="img/promo.jpg" class="promo1">
+            <img src="img/promo2.jpg" class="promo2">
+            <img src="img/promo3.jpg" class="promo3">
+            <img src="img/promo4.jpg" class="promo4">
+        </figure>
+        </div>
+    </div>
+    <div class="promo-camping"><img src="img/camping promo.jpg"></div>
+    <ul class="imbattables">
+        <li class="carte">
+            <a href="camping.html">
+                <img class="photo" src="./img/camping.jfif" alt="photo camping club">
+                <p class="promo">-40%</p>
+                <p>France Cote Atlantique<br>Camping club Lou Pignada Landes 5*</p><br>
+                <p class="prix"> À partir de 75€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/camping_complet1.jpg" alt="photo mobil home">
+                <p class="promo">-25%</p>
+                <p>Madrid<br>Camping LunaBay</p><br>
+                <p class="prix"> À partir de 329€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/camping-complet2.jpg" alt="photo camping">
+                <p class="promo">-30%</p>
+                <p>France Languedoc-Roussillon<br>Les Sable d'Or 3*</p><br>
+                <p class="prix"> À partir de 90€</p>
+            </a>
+        </li>
+    </ul>
+    <ul class="imbattables">
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/camping-complet3.jpg" alt="photo camping ">
+                <p class="promo">-10%</p>
+                <p>Brésil<br><br>Camping Eden 3*</p>
+                <p class="prix"> À partir de 84€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/camping_complet4.jpg" alt="photo bateau">
+                <p class="promo">-35%</p>
+                <p>France Languedoc-Roussillon<br>Camping La Clape 3*</p>
+                <p class="prix"> À partir de 350€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/camping_complet5.jfif" alt="photo bateau">
+                <p class="promo">-24%</p>
+                <p>France Saint Tropez<br>Camping Paradis 5*</p>
+                <p class="prix"> À partir de 399€</p>
+            </a>
+        </li>
+    </ul>
+    <button class="voir-plus-camping">Voir plus de camping</button>
+    
+    <footer>
+        <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
+        <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS DE VOS VACANCES. POUR VOTRE VOYAGE, ON S'OCCUPE DE TOUT !</p></div>
+        <div class="nous">
+            <p style="font-weight: bold; font-size: 20px;">À propos</p>
+            </p>
+            <a href="#">Qui sommes-nous ?</a>
+            <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+        </div>
+        <div class="mentions">
+            
+                <p style="font-weight: bold; font-size: 20px;">Conditions</p>
+        
+            <p>
+                <a href="#">CGV</a>
+            </p>
+            <p> 
+               <a href="#">Protection de vie privé</a>
+            </p>
+            <p>
+                <a href="mention legale.html"> Mentions légales</a>
+            </p>
+        </div>
+        <div class="paiement-securisé">
+            <p class="info" style="font-weight: bold;">INFOS ET RESERVATION</p>
+            <p class="numero" style="font-weight: bold;">0862 69 70 71</p>
+            <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+        </div>
+    </footer>
+</body>
+
+</html>

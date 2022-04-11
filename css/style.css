@@ -4,21 +4,28 @@
     font-family: Montserrat, sans-serif;
 }
 header{
-    background-image: url("mer2.jpg");
+    background-image: url("fond-header.jpg");
     width:100%;
-    height: 350px;
-    background-size: 160%;
-    background-position-y: 90%;
-    background-position-x: 100%;
+    height: 300px;
+    background-size: 100%;
+    background-position-y: 2%;
+    background-position-x: 2%;
     background-repeat: no-repeat;
     z-index: 4;
 }
 .logo{
     float: left;
-    margin-top: -30px;
-    margin-right: -40px;
-    margin-left: 50px;
-    width: 10%;
+    margin-left: 1%;
+    width: 4%;
+}
+.logo-nom{
+  float: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 20%;
+}
+#logo a{
+  text-decoration: none;
 }
 header #logo{
   transition: all 0.2s ease-in-out;
@@ -46,22 +53,18 @@ header #logo{
 .menu_bouton_burger{
   display: none;  
 }
-h3{
-    font-size: x-large;
-    font-family:sans-serif;
-    color: #242491;
-    padding-top: 40px;
-}
+
 :root{
     --hauteur-menu: 60px;
 }
 nav {
-    margin-top: 90px;
-    margin-left: 25px;
+    margin-top: 40px;
+    margin-left: 10%;
     width: 75%;
     font-size: 18px;
     position: sticky;
-    top: 0;   z-index: 3;
+    top: 0;   
+    z-index: 3;
     position: absolute;
 }
 nav > ul {
@@ -76,7 +79,7 @@ nav > ul {
     list-style-type: none;
   }
   nav > ul > li {
-    background-color:  rgba(33, 178, 210, 0.614);
+    background-color:  rgba(6, 255, 243, 0.713);
     position: relative;
     height: 100%;
     flex: 1;
@@ -87,7 +90,7 @@ nav > ul {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  li a {
+ li a {
     text-decoration: none;
     color: black;
   }
@@ -102,7 +105,7 @@ nav > ul {
     margin-top: var(--hauteur-menu);
     width: 100%;
     text-align: center;
-    background-color: rgba(17, 156, 187, 0.96);
+    background-color: rgba(2, 216, 216, 0.947);
     border-radius: 2px;
     overflow: hidden;
     max-height: 0;
@@ -116,10 +119,10 @@ nav > ul {
     display: flex; 
   }
   nav > ul > li:hover > a{
-    color: #fafafa;
+    color: #000000;
   }
   .sous-menu > li > a:hover{
-    color:#fafafa;
+    color:#ffffff;
   }
   @keyframes rotationFleche {
     0% {
@@ -135,53 +138,74 @@ nav > ul {
   @keyframes apparitionSousMenu {
     0% {
       box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-      border-top: 3px solid rgb(33, 178, 210);
+      border-top: 3px solid #00cfcc;
     }
     30% {
       box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
     }
     100% {
       max-height: 50em;
-      border-top: 3px solid #21ece8;
+      border-top: 3px solid #00cfcc;
       box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
     }
   }
   .menu-deroulant:hover > .sous-menu {
     animation: apparitionSousMenu 1s forwards;
   }
-.connexion_inscription a{
-  text-decoration: none;
-  color: rgb(15, 10, 108);
-  margin-left: 50%;
-  line-height: 2em;
+.connexion_inscription{
+  display: flex;
+  flex-direction: row;
 }
-.soleil{
-      margin-top: -80px;
-      float: right;
-      width: 20%;
-      height: 80%;
-      z-index: 1;
-      opacity: 0.9;
+.connexion_inscription a{
+  font-family: "AnekOdia";
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.connexion{
+  border: none;
+  border-radius: 55px;
+  background-color: #3cf9f9cd;
+  padding: 15px 55px 15px 55px;
+  margin-left: 30%;
+  margin-top: 2%;
+}
+.inscription{
+   margin-top: 2%;
+  border: none;
+  border-radius: 55px;
+  background-color: #6cfffdd8;
+  padding: 15px 55px 15px 55px;
+  margin-left: 10%;
+}
+.bulle{
+  margin-top: -20px;
+  width: 13%;
+  float: right;
 }
 header p{
+     font-family: "AnekOdia";
+     font-weight: bold;
       margin-top: 10px;
-      font-size: 22px;
+      font-size: 19px;
       line-height: 2em;
-      margin-top: 10px;
-      margin-left: 88%;
+      margin-top:70px;
+      margin-left: 89.5%;
       text-align: center;
       position: absolute;
-      color: #fafafa;
+      color: #000000;
 }
 form{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 8%;
   padding-top: 10px;
-  padding-bottom: 1%;
-  margin-bottom: 5px;
-  background-color: rgba(33, 178, 210, 0.582);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 247, 255, 0.582);
   width: 100%;
   z-index:1;
 }
@@ -214,6 +238,7 @@ button:hover{
 }
 
 #slider{
+  margin-top: 0px;
     height: 480px;
   }
   #slider { 
@@ -271,54 +296,33 @@ button:hover{
     margin-bottom: 50px;
     
 }
-
-
 .carte{
     padding: 10px;
     border-radius: 20px;
     list-style-type: none;
     -webkit-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
--moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-transition: -webkit-transform 1s;
+    -moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+    box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+    transition: -webkit-transform 1s;
 }
-
 .carte:hover{
-    transform: scale(1.10)
+  transform: scale(1.10);
 }
 
 .imbattables li{
     margin-left: 170px;
 
 }
-
-
+.imbattables p{
+  font-family: "AnekOdia";
+  font-weight: 500;
+}
 .photo{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 350px;
     height: 200px;
 }
-
-.photo-croisiere {
-    transition: -webkit-transform 1s;
-}
-
-.photo1:active{
-    transform: scale(3.62) translate(194px,58px);
-     height: 170px; 
-}
-
-.photo2:active{
-    transform: scale(3.62) translate(194px,-2px);
-    height: 170px;
-}
-
-.photo3:active{
-    transform: scale(3.62) translate(194px,-60px);
-    height: 170px;
-}
-
 
 .promo{
     margin-top: -200px;
@@ -334,8 +338,10 @@ transition: -webkit-transform 1s;
 .prix{
     text-align: right;
 }
-
-#tableau-principal tr th{
+caption{
+  padding-top: 30px;
+}
+table tr th{
     border: 1px solid black;
     width: 250px;
     height: 110px;
@@ -366,13 +372,13 @@ button:hover{
 
 .bouton-bleu:hover{
     transition: 2ms;
-    transform: scale(1.05);
-    
+    transform: scale(1.05);   
 }
-
-
-
-#tableau-principal{
+table th{
+  font-family: "AnekOdia";
+}
+table{
+ 
     border-collapse:collapse;
     display: inline;
     margin-left: 200px;
@@ -380,292 +386,634 @@ button:hover{
     position: absolute;
     transform: translate(-110px);
     background-color: #D9F8FF;
+  }
+  .derniere-minute{
+    background-image: url("beach.jpg");
+    background-position-y: 50%;
+    background-position-x: 60%;
 }
-
-#tableau-principal caption{
-    margin-bottom: 32px;
+table caption{
+  font-family: "AnekOdia";
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 32px;
 }
-
 .premiere-ligne{
+  font-family: "AnekOdia";
     border-top: none;
 }
 
 .famille1{
+  font-family: "AnekOdia";
     width: 36%;
     display: block;
 }
 
 .famille2{
+  font-family: "AnekOdia";
     width: 36%;
     display: inline;
     margin-bottom: 60px;
 }
-
+table{
+  margin-bottom: 50px;
+}
 .tableau-acceuil{
+  font-family: "AnekOdia";
     margin-left: 100px;
 }
-
-
-
-
 footer{
-    width: 100%;
     display:flex;
-    background-color: #1ec5ba;
+    background-image: url("fond_footer2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 100%;
+    background-size: 120%;
+    margin-top: 0px;
+    
+}
+.logo_footer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo_footer p{
+  font-family: "AnekOdia";
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.logo-bas{
+  width: 50%;
+  margin-left: 20%;
 }
 
 .nous{
     
-   
+   font-family: "AnekOdia";
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 .nous p{
-    color: aliceblue;
-    padding-top: 20px;
+  font-family: "AnekOdia";
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
 }
 
-.nous p a{
+.nous a{
+  font-family: "AnekOdia";
+  font-size: 18px;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .mentions{
+  font-family: "AnekOdia";
     width: 20%;
     display: block;
-    font-size: 20px;
-    margin-left: 300px;
-    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-top: 10px;
 }
 
 .mentions p{
-    padding-top: 20px;
+  font-family: "AnekOdia";
+    padding-top: 10px;
 }
 .mentions p a{
+  font-size: 18px;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(1, 3, 4);
+}
+.mention p {
+  font-size: 18px;
 }
 
 .reseau{
-    width: 180px;
+    width: 80px;
 }
 
 .paiement-securisé{
   transform: translateX(100px);
   margin-right: 120px;
-  
    text-align: center;
 }
 
 .info{
-    color: aliceblue;
-    padding-top: 50px;
-    margin-bottom: 60px;
-    font-size: 20px;
+  font-family: "AnekOdia";
+    color: rgb(1, 1, 1);
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .numero{
-    color: aliceblue;
-    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
 }
-
+footer a:hover{
+  text-decoration: underline;
+}
 .paiement{
-    padding-top:50px;
+    padding-top:10px;
     width: 60%;
     transform: translateX(20px);
 }
 
-.destination-croisiere{
-    margin-top: 80px;
-    margin-left: 110px;
 
-}
-
-
-.photo-croisiere{
-    display: flex;
-   width: 270px;
-   padding-bottom: 15px;
-    padding-top: 18px;
-}
-
-.photo-croisiere ul{
-    list-style-type: none;
-}
-
-.photo-croisiere3{
-    display: block;
-    
-   
-}
-
-.croisiere{
-    margin-top: 50px;
-    margin-left: 100px;
-    
-}
-
-
-
-.bateau{ 
-    margin-left: 350px;
-   width: 54%;
-   display: flex;
-   margin-top: -620px;
-}
-
-.description-croisiere{
-    padding-left: 35px;
-    padding-bottom: 30px;
-    background-color: #D9F8FF;
+/** page hôtel jumbo**/
+.conteneur_prix{
+    margin-top: -450px;
     float: right;
-    margin-right: 200px;
-    margin-top: -600px;
+    margin-right: 6%;
+    line-height: 3em;
 }
-
-.description-croisiere ul li{
-
-    padding-top:60px ;
+.activités{
+    padding-top: 20px;
+    width: 80%;
 }
-
-.description-croisiere p{
-    margin-top: 50px;
-    text-align: right;
-    margin-right: 50px;
-}
-
-.bouton-croisiere{
-    border: none;
-    color:rgb(255, 255, 255);
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px 35px 15px 35px;
-    background-color: rgb(0, 50, 252);
-    margin-right: 30px;
-    box-shadow: 1px 2px 3px 1px #0101ff;
-    margin-top:50px;
-}
-.depart-de{
-    color: aliceblue;
-    display: inline-flex;
-    margin-top: 180px;
-    margin-left: 370px;
-    border: 1px solid black;
-    background-color: #7070dd;
-    border-radius: 200px;
-    padding: 10px;
-}
-
-#tableau-croisiere{
-    border-collapse: collapse;
-    width: 70%;
-    height: 500px;
-    margin-top: 30px;
-    margin-bottom: 80px;
-    background-color: #d9f8ff93;
-    
-}
-
-#tableau-croisiere tr th{
-    border: 1px solid black;
-    
-}
-
-#prix-croisiere{
-    margin-left: 350px;
-
-}
-
-.photo-interieur1{
-    width: 200px;
-}
-.photo-interieur{
-    display: flex;
-}
-
-.interieur1{
-
-    transform: translatex(225px);
-}
-
-.interieur2{
-    transform: translatex(135px);
-}
-
-.interieur3{
-    transform: translatex(38px);
-}
-
-.interieur4{
-    transform: translatex(-48px);
-}
-
-.texte1{
-    transform: translate(70px,150px);
-}
-
-.texte2{
-    transform: translate(-20px,150px);
-}
-
-.texte3{
-    transform: translate(-110px,150px);
-}
-
-.texte4{
-    transform: translate(-190px,150px);
-}
-
-
-.interieur-tableau{
-    width: 20%;
-}
-
-.programme-croisiere{
-    color: aliceblue;
-    overflow: auto;
-    width: 45%;
-    height: 300px;
-    margin-left: 350px;
-    margin-bottom: 200px;
-    display: flex
-}
-
-.prestation-coisiere{
-   
-    position: absolute;
-    transform: translate(1500px,-590px);
-    background-color: #d9f8ff;
-    padding: 30px;
-}
-
-.prestation-coisiere li{
-    padding-top: 10px;
-}
-
-.prestation-coisiere figcaption{
-    margin-bottom: 30px;
-}
-
-.fond-croisiere{
-    background-image: url(../img/bateau\ fond.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 50px;
+.section1 p{
     padding-bottom: 50px;
+    margin-left: 80%;
+    font-size: 40px;
 }
-
-.voir-plus{
+.section1 button{
     border: none;
     color:rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px 55px 15px 55px;
-    margin-left: 750px;
+    background-color: rgb(0, 50, 252);
+    margin-left: 30%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+button:hover{
+    transform:scale(1.05);
+    transition: 2ms;
+}
+.conteneur_photos img {
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    width: 270px;
+    margin-left: 1%;
+}
+.image1{
+  margin-top: 4%;
+    transition-delay: 1s;
+    transition: -webkit-transform 1s;
+}
+.image1:active{
+  margin-top: -10px;
+  -webkit-transform: scale (2.5);
+  -moz-transform: scale (3.5);
+  -ms-transform: scale (4);
+  transform: scale(3.05) translate(220px,85px);
+  width: 310px;
+  height: 200px;
+}
+.image2{
+  transition-delay: 1s;
+  transition: -webkit-transform 1s;
+}
+.image2:active{
+  margin-top: -50px;
+  -webkit-transform: scale (2.5);
+  -moz-transform: scale (3.5);
+  -ms-transform: scale (4);
+  transform: scale(3) translate(224px,15px);
+  width: 310px;
+  height: 200px;
+}
+.image3{
+  transition-delay: 1s;
+  transition: -webkit-transform 1s;
+}
+.image3:active{
+  margin-top: -50px;
+  -webkit-transform: scale (2.5);
+  -moz-transform: scale (3.5);
+  -ms-transform: scale (4);
+  transform: scale(3) translate(224px,-57px);
+  width: 310px;
+  height: 200px;
+}
+.photo_hôtel{
+    margin-top: -625px;
+    margin-left: 20%;
+}
+.photo_hôtel img{
+    width: 61%;
+}
+.section2 h1{
+  font-family: "AnekOdia";
+  margin-top: 50px;
+  margin-left: 5%;
+   font-size: 20px;
+}
+.article1{
+    font-family: "AnekOdia";
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 5%;
+    line-height: 2em;
+}
+.article2{
+    font-family:"AnekOdia";
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 8%;
+    line-height: 2em;
+}
+.tableau_hotel1{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.476);
+}
+.date_sejour_hotel{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 0;
+    background-color: #ffffffa5;
+}
+.info_hotel, .info_hotel1{
+  font-family: "AnekOdia";
+  font-weight: 800;
+    padding-top: 10px;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.476);
+    border-right: 1px solid rgba(0, 0, 0, 0.372);
+    padding-bottom: 0px;
+}
+.info_hotel1{
+    border-left: none;
+}
+.reserver{
+  font-family: "AnekOdia";
+  font-weight: 800;
+  padding-left: 20px;
+  padding-right: 20px;
+    border: none;
+}
+.section3{
+    background-image: url("plage_fond.jpg");
+    width: 100%;
+    height: 1080px;
+    background-repeat: no-repeat;
+}
+.section3 h4{
+  font-family: "AnekOdia";
+  font-weight: 800;
+    font-size: 30px;
+    padding-top: 50px;
+    margin-left: 25%;
+}
+.section3 button{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "AnekOdia";
+    font-weight: 500;
+    padding: 20px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    margin-left: 5%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+button:hover{
+    transform:scale(1.05);
+    transition: 2ms;
+}
+.formalité{
+  font-family: "AnekOdia";
+  font-weight: 400;
+    float: right;
+    margin-top: -900px;
+    margin-right: 7%;
+    margin:4px, 4px;
+    padding:8px;
+    background-color: rgba(236, 236, 236, 0.757);
+    width: 500px;
+    height: 710px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    font-size: medium;
+}
+.section3 .button_offres{
+  margin-left: 70%;
+}
+.button_offres{
+  border: none;
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 55px 15px 55px;
+  background-color: rgb(0, 50, 252);
+  box-shadow: 1px 2px 3px 1px #0101ff;
+  margin-top: 845px;
+}
+.button_offres a{
+  color: #fafafa;
+  text-decoration: none;
+  text-align: center;
+}
+.page_hotel_footer{
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-image: url("fond_footer.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 90%;
+}
+
+
+/** page camping**/
+.conteneur_prix_info{
+    margin-top: -580px;
+    float: right;
+    margin-left: 70%;
+    line-height: 3em;
+}
+.section5 span{
+  padding-bottom: 50px;
+    margin-left: 60%;
+    margin-right: 10%;
+    font-size: 40px;
+}
+.formalité_camping{
+  font-family: "AnekOdia";
+  font-weight: 400;
+    float: right;
+    margin-top: 10px;
+    margin-right: 7%;
+    margin:4px, 4px;
+    padding:8px;
+    background-color: rgba(236, 236, 236, 0.757);
+    width: 500px;
+    height: 710px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    font-size: medium;
+}
+.section5 p{
+  padding-top: 20%;
+  padding-bottom: 50px;
+  margin-left: 2%;
+  margin-right: 6%;
+  font-size: 18px;
+}
+.promo-camping{
+  margin-left: 12%;
+}
+.section5 button{
+  border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    margin-top: 10%;
+    margin-left: 30%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+.conteneur_photos_camping img {
+    
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 270px;
+  margin-left: 1%;
+}
+.camping1{
+  margin-top: -60px;
+  transition-delay: 1s;
+  transition: -webkit-transform 1s;
+}
+.camping1:active{
+-webkit-transform: scale (2.5);
+-moz-transform: scale (3.5);
+-ms-transform: scale (4);
+transform: scale(3.05) translate(211px,73.9px);
+width: 275px;
+height: 210px;
+}
+.camping2{
+transition-delay: 1s;
+transition: -webkit-transform 1s;
+}
+.camping2:active{
+margin-top: -50px;
+-webkit-transform: scale (2.5);
+-moz-transform: scale (3.5);
+-ms-transform: scale (4);
+transform: scale(3) translate(213.7px,1px);
+width:279px;
+height: 210px;
+}
+.camping3{
+transition-delay: 1s;
+transition: -webkit-transform 1s;
+}
+.camping3:active{
+margin-top: -50px;
+-webkit-transform: scale (2.5);
+-moz-transform: scale (3.5);
+-ms-transform: scale (4);
+transform: scale(3) translate(213.7px,-67px);
+width: 280px;
+height: 210px;
+}
+.photo_camping{
+  margin-top: -625px;
+  margin-left: 20%;
+}
+.photo_camping img{
+  width: 55%;
+}
+.section6 h1{
+    padding-top: 100px;
+    margin-left: 4%;
+  }
+.tableau_camping{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.476);
+}
+.date_sejour_camping{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 0;
+    background-color: #ffffffa5;
+}
+.info_camping, .info_camping1{
+    font-family: "AnekOdia";
+    font-weight: 800;
+    padding-top: 10px;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.476);
+    border-right: 1px solid rgba(0, 0, 0, 0.372);
+    padding-bottom: 0px;
+}
+.info_camping1{
+    border-left: none;
+}
+.reserver{
+  font-family: "AnekOdia";
+  font-weight: 800;
+  padding-left: 20px;
+  padding-right: 20px;
+    border: none;
+}
+.section5{
+  margin-top: 150px;
+}
+
+  .section7{
+  background-image: url("fond_camping.jpg");
+  width: 100%;
+  height: 1200px;
+  background-repeat: no-repeat;
+}
+  .tableau_camping1{
+    margin-top: 10%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.476);
+  }
+  .tableau_camping{
+    border-bottom: none;
+  }
+  .date_sejour_camping{
+      width: 50%;
+      margin-top: 200px;
+      margin-left: 10%;
+      padding: 0;
+      background-color: #ffffffa5;
+  }
+  .info_camping, .info_camping{
+    font-family: "AnekOdia";
+    font-weight: 800;
+      padding-top: 10px;
+      border-bottom: none;
+      border-top: none;
+      border-left: 1px solid rgba(0, 0, 0, 0.476);
+      border-right: 1px solid rgba(0, 0, 0, 0.372);
+      padding-bottom: 0px;
+  }
+  .info_camping1{
+      border-left: none;
+  }
+  .reserver{
+    font-family: "AnekOdia";
+    font-weight: 800;
+    padding-left: 20px;
+    padding-right: 20px;
+      border: none;
+  }
+.section7 button{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "AnekOdia";
+    font-weight: 500;
+    padding: 20px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    margin-left: 5%;
+    box-shadow: 1px 2px 3px 1px #0101ff;
+}
+button:hover{
+    transform:scale(1.05);
+    transition: 2ms;
+}
+.formalité_camping{
+    font-family: "AnekOdia";
+    font-weight: 400;
+    float: right;
+    margin-top: -980px;
+    margin-right: 7%;
+    margin:4px, 4px;
+    padding:8px;
+    background-color: rgba(236, 236, 236, 0.757);
+    width: 500px;
+    height: 710px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    font-size: medium;
+}
+
+.section7 .button_offres_camping{
+    border: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
+    background-color: rgb(0, 50, 252);
+    box-shadow: 1px 2px 3px 1px #0101ff;
+    margin-top: 1050px;
+    margin-left: 70%;
+   
+  }
+  .button_offres_camping a{
+    color: #fafafa;
+    text-decoration: none;
+    text-align: center;
+  }
+  .page_camping_footer{
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-image: url("fond_footer.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 90%;
+    margin-bottom: -2000px;
+  }
+
+
+  .voir-plus-camping{
+    border: none;
     margin-top: 50px;
+    margin-left: 750px;
     margin-bottom: 100px;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 55px 15px 55px;
     background-color: rgb(0, 50, 252);
     box-shadow: 1px 2px 3px 1px #0101ff;
 }
+/** page mentions légales**/
+.mentions_légales{
+  font-family: "AnekOdia";
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #fbf9f9c1;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+.section9{
+  padding-top: 50px;
+  background-image: url("fond_mentions.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+
+
