@@ -288,13 +288,12 @@ button:hover{
     margin: 0;
     padding: 0;
     font-size: 0;
-    animation: 20s slidy infinite;
+    animation: slidy 20s  infinite ;
   }
 
 .imbattables{
     display: flex;
     margin-bottom: 50px;
-  
     
 }
 .carte{
@@ -312,6 +311,7 @@ button:hover{
 
 .imbattables li{
     margin-left: 170px;
+
 }
 .imbattables p{
   font-family: "AnekOdia";

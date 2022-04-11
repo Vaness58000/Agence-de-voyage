@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>selection de croisière</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img class="logo" src="img/logo4.png" alt="logo soleil mer"></div><h3>OnlineVoyages</h3> <img class="soleil" src="img/soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
+      
+        <div class="connexion_inscription"><a href="#">se connecter</a><br><a href="#">s'inscrire</a></div>
+        <nav >
+            <ul class="menu-deroulant">
+                <li class="menu-deroulant"><a href="#">Séjour</a>
+                    <ul class="sous-menu">
+                        <li><a href="toutes les croisiere.html">Croisière</a></li>
+                        <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
+                        <li><a href="#">Séjour en Club</a></li>
+                        <li><a href="page camping complet.html">Camping</a></li>
+                    </ul>
+                </li>
+             <li class="menu-deroulant"><a href="#">Week-end</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Thalasso/Bien-être</a></li>
+                        <li><a href="#">Découverte/aventure</a></li>
+                    </ul>
+                        <li class="menu-deroulant"><a href="#">Bons Plans</a>
+                            <ul class="sous-menu">
+                                <li><a href="#">Séjour</a></li>
+                                <li><a href="#">Week-end</a></li>
+                            </ul>
+                </li>
+            </ul>
+        </nav>
+            <form>
+                <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+                <input type="date" name=Date class="date" placeholder="14/04/2022">
+                <select name="nombre de jour" id="voyage">
+                            <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                            <option value="camping">2 semaines (12 à 19 jours)</option>
+                            <option value="croisière">Séjour long (20 jours et plus)</option>
+                        </select>  
+                <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                    <option value="séjour_hôtel">Séjours tout compris</option>
+                    <option value="séjour_club">Séjours Famille</option>
+                    <option value="croisière">Croisière</option>
+                    <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                    <option value="camping">Camping</option>
+                    <option value="camping">Séjours Thalasso/Bien-être</option>
+                </select>
+                <button>Rechercher</button>
+            </form>   
+    </header>
+    <div id="section1">
+    <div id="slider">
+        <figure>
+            <img src="img/promo.jpg" class="promo1">
+            <img src="img/promo2.jpg" class="promo2">
+            <img src="img/promo3.jpg" class="promo3">
+            <img src="img/promo4.jpg" class="promo4">
+        </figure>
+        </div>
+    </div>
+
+    <ul class="imbattables">
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/photo 2.jfif" alt="photo piscine portugal">
+                <p class="promo">-21%</p> 
+                <p>Italie,Sicile,Malte<br>Croisière<br><br> Départ de marseille</p>
+                <p class="prix">À partir de 629€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/croisiere 3.jpg" alt="photo piscine espagne">
+                <p class="promo">-28%</p> 
+                <p>Italie, Ibiza, Espagne<br>Croisière<br><br> Départ de marseille</p>
+                <p class="prix">À partir de 493€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/croisiere 4.jpg." alt="photo piscine italie">
+                <p class="promo">51%</p>
+                <p>Monténégro, Iles Grecques, Croatie<br> Croisière<br><br> Départ de venise </p>
+                <p class="prix">À partir de 759€</p>
+            </a>
+        </li>
+    </ul>
+    <ul class="imbattables">
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/croisiere 5.jpg" alt="photo bateau">
+                <p class="promo">-23%</p>
+                <p>Perles des Antilles<br>croisière<br><br>Départ de Martinique</p>
+                <p class="prix"> À partir de 453€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/croisiere 6.jpg" alt="photo bateau">
+                <p class="promo">-21%</p>
+                <p>Grand Tour de Corse<br>Croisière<br><br>Départ de Nice</p>
+                <p class="prix"> À partir de 2129€</p>
+            </a>
+        </li>
+        <li class="carte">
+            <a href="#">
+                <img class="photo" src="./img/croisiere 7.jpg" alt="photo bateau">
+                <p class="promo">-11%</p>
+                <p>Turquie, Chypre, Egypte<br>Croisière<br><br> Départ de Istanbul</p>
+                <p class="prix"> À partir de 843€</p>
+            </a>
+        </li>
+    </ul>
+    <button class="voir-plus">Voir plus de Croisière</button>
+    <footer>
+        <img title="logo" src="./img/logo 4.png" alt="logo">
+        <div class="nous">
+            <p>
+               <a href="#">À propos</a>
+            </p>
+            <p>qui sommes-nous ?</p>
+            <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+        </div>
+        <div class="mentions">
+            <p>
+                <a href="#">Conditions</a>
+            </p>
+            <p>
+                <a href="#">CGV</a>
+            </p>
+            <p> 
+               <a href="#">Protection de vie privé</a>
+            </p>
+            <p>
+                <a href="#"> légales</a>
+            </p>
+        </div>
+        <div class="paiement-securisé">
+            <p class="info">INFO ET RESERVATION</p>
+            <p class="numero">0862 69 70 71</p>
+            <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+        </div>
+    
+    
+</body>
+</html>
