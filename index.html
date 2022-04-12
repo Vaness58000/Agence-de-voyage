@@ -11,10 +11,34 @@
 <body>
     <header>
         <div id="logo"><a href="index.html"><img class="logo" src="img/logo2.png" alt="logo valise"><img class="logo-nom" src="img/logo NOM.png"></a> </div>
-        <img class="bulle" src="img/bulle.png">   <p>Infos et réservation<br>0862 69 70 71 </p>
+        <img class="bulle" src="img/bulle.png">   <p class="clignote">Infos et réservation<br>0862 69 70 71 </p>
       
         <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
-        <nav>
+        <div class="connexion-mobile"><p class="connexion_mobile"><a href="#">Connexion</a></p><p class="inscription_mobile"><a href="#">inscription</a></p></div>
+        
+        <div class="menu_burger">
+        <input id="menu_burger" type="checkbox"></input>
+
+        <label for="menu_burger" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+        
+        <div class="nav">
+          <div class="nav-wrapper">
+            <nav>
+              <a href="#">Séjour hôtel</a><br>
+              <a href="#">Séjour camping</a><br>
+              <a href="#">Croisière</a><br>
+              <a href="#">Séjour club</a><br>
+              <a href="#">Thalasso</a>
+              <a href="#">Découverte</a>
+            </nav>
+          </div>
+        </div>
+    </div>
+        <nav class="menu-grand">
             <ul class="menu-deroulant">
                 <li class="menu-deroulant"><a href="#">Séjour</a>
                     <ul class="sous-menu">
@@ -60,15 +84,15 @@
     <div id="section1">
       
     <div id="slider">
-        <figure>
-            <img src="img/promo.jpg" class="promo1">
-            <img src="img/promo2.jpg" class="promo2">
-            <img src="img/promo3.jpg" class="promo3">
-            <img src="img/promo4.jpg" class="promo4">
+        <figure class="figure-promo">
+            <img  src="img/promo.jpg" class="promo1">
+            <img  src="img/promo2.jpg" class="promo2">
+            <img  src="img/promo3.jpg" class="promo3">
+            <img  src="img/promo4.jpg" class="promo4">
         </figure>
+        
         </div>
     </div>
-
     <ul class="imbattables">
         <li class="carte">
             <a href="#">
@@ -89,14 +113,12 @@
         <li class="carte">
             <a href="hôtel jumbo.html">
                 <img class="photo" src="./img/photo piscine hotel.jpg" alt="photo piscine italie">
-                <p class="promo">50%</p>
+                <p class="promo">-50%</p>
                 <p>Italie<br> Hotel 4*</p>
                 <p class="prix">À partir de 537€<br> Tout inclus</p>
             </a>
         </li>
-    </ul>
-    <ul class="imbattables">
-        <li class="carte">
+        <li class="carte" id="photo-bateau-mobile">
             <a href="page croisière.html">
                 <img class="photo" src="./img/photo 2.jfif" alt="photo bateau">
                 <p class="promo">-21%</p>
@@ -125,6 +147,7 @@
         <img class="famille1" title="famille contente" src="./img/photo famille.jfif" alt="photo famille">
         <img class="famille2" title="famille contente 2" src="./img/photo famille2.jfif" alt="photo famille 2">
         <table cellpadding="36" class="derniere-minute">
+            
             <caption>Départ de dernière minute</caption>
             <tr >
                 <th class="premiere-ligne">samedi 16 avril</th>
@@ -161,12 +184,15 @@
                 
     </div>
     <footer>
+        
         <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
         <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS DE VOS VACANCES. POUR VOTRE VOYAGE, ON S'OCCUPE DE TOUT !</p></div>
         <div class="nous">
             <p style="font-weight: bold; font-size: 20px;">À propos</p>
             </p>
-            <a href="#">Qui sommes-nous ?</a>
+            <p>
+                <a href="#">Qui sommes-nous ?</a>
+            </p>
             <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
         </div>
         <div class="mentions">
