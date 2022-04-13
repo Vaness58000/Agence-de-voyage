@@ -248,7 +248,7 @@ button:hover{
 
 #slider{
   margin-top: 0px;
-    height: 480px;
+    height: 700px;
   }
   #slider { 
    
@@ -303,14 +303,14 @@ button:hover{
 .imbattables{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-self:flex-end;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+
 }
 .carte{
-  margin-right: 10%;
-  margin-bottom: 5%;
+   margin-left: 6%;
+    margin-bottom: 5%;
     padding: 10px;
     border-radius: 20px;
     list-style-type: none;
@@ -322,8 +322,13 @@ button:hover{
 .carte:hover{
   transform: scale(1.10);
 }
-
-
+h1{
+  font-family: "AnekOdia";
+  font-size: 40px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  padding-left: 2%
+}
 .imbattables p{
   font-family: "AnekOdia";
   font-weight: 500;
@@ -360,8 +365,7 @@ table tr th{
     border-right: none;
 }
 
-.bouton-bleu {
-    
+.bouton-bleu { 
     border: none;
     color:rgb(255, 255, 255);
     font-size: 16px;
@@ -388,14 +392,13 @@ table th{
   font-family: "AnekOdia";
 }
 table{
- 
+     width: 50%;
     border-collapse:collapse;
-    display: inline;
-    margin-left: 200px;
-    margin-top: -274px;
-    position: absolute;
-    transform: translate(-110px);
+    display: block;
+    position: relative;
+    margin: auto;
     background-color: #D9F8FF;
+    text-align: center;
   }
   .derniere-minute{
     background-image: url("beach.jpg");
@@ -412,18 +415,28 @@ table caption{
   font-family: "AnekOdia";
     border-top: none;
 }
-
+.photo_famille{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: flex-start;
+  margin-bottom: 50px;
+}
 .famille1{
   font-family: "AnekOdia";
-    width: 36%;
-    display: block;
+    width: 33%;
+    height: auto;    
 }
-
 .famille2{
   font-family: "AnekOdia";
-    width: 36%;
-    display: inline;
-    margin-bottom: 60px;
+    width: 33%;
+    height: auto;
+}
+.famille3{
+  width:34%;
+  height: auto;
+
 }
 table{
   margin-bottom: 50px;
@@ -431,98 +444,87 @@ table{
 .tableau-acceuil{
   width:100%;
   font-family: "AnekOdia";
-    margin-left: 100px;
+
 }
 footer{
+  background-image: url("fond_footer2.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  background-position-y: 100%;
+  background-size: 160%;
+}
+#footer{
     display:flex;
-    background-image: url("fond_footer2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position-y: 100%;
-    background-size: 120%;
-    margin-top: 0px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
 }
 .logo_footer{
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
-  margin-top: 5px;
-  padding-top: 10px;
+  justify-content: center;
+  align-content: center;
   padding-bottom: 10px;
 }
-.logo_footer p{
+.sloggan{
   font-family: "AnekOdia";
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
 }
 .logo-bas{
-  width: 50%;
-  margin-left: 20%;
+  width: 100%;
 }
-
+#footer a{
+  text-decoration: none;
+  color: #000000;
+  list-style-type: none;
+}
+li{
+  font-family: "AnekOdia";
+  list-style-type: none;
+}
+ul{
+  font-family: "AnekOdia";
+}
 .nous{ 
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-   font-family: "AnekOdia";
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 120px;
+  margin-left: 10%;
+  padding-top: 30px;
 }
-
-.nous p{
-  font-family: "AnekOdia";
-    color: rgb(0, 0, 0);
-    padding-top: 10px;
-}
-
 .nous a{
   font-family: "AnekOdia";
-  font-size: 18px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  font-size: 20px;
+
 }
 
 .mentions{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  font-family: "AnekOdia";
-    width: 20%;
-    display: block;
-    font-size: 18px;
-    margin-left: 250px;
-    margin-top: 10px;
+  padding-top: 30px;
+  padding-right: 40px;
+  margin-left: 5%;
 }
 
-.mentions p{
+.mentions a{
   font-family: "AnekOdia";
-    padding-top: 10px;
-}
-.mentions p a{
-  font-size: 18px;
-    text-decoration: none;
-    color: rgb(1, 3, 4);
-}
-.mention p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .reseau{
     margin-top: 10px;
     width: 100px;
 }
-
 .paiement-securisé{
-  transform: translateX(100px);
-  margin-right: 120px;
-   text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 320px;
+  padding-left: 15%;
 }
-
 .info{
   font-family: "AnekOdia";
     color: rgb(1, 1, 1);
@@ -530,19 +532,18 @@ footer{
     margin-bottom: 20px;
     font-size: 25px;
 }
-
 .numero{
     color: rgb(0, 0, 0);
     font-size: 25px;
 }
-footer a:hover{
+.paiement{
+  width:100%;
+  height: auto;
+}
+#footer a:hover{
   text-decoration: underline;
 }
-.paiement{
-    padding-top:10px;
-    width: 60%;
-    transform: translateX(20px);
-}
+
 
 /**responsive design portable **/  
 @media screen and (min-width: 320px) and (max-width: 500px){
@@ -586,7 +587,7 @@ footer a:hover{
     position: fixed;
     width: 50%;
     height: 40%;
-    background-color: #00c096e4;
+    background-color: #00c090f9;
     top: -100%; left: 0; right: 0; bottom: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -597,10 +598,12 @@ footer a:hover{
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
+    z-index: 8;
   }
   nav {
     text-align: left;
     margin-left: 25%;
+    z-index: 8;
   }
   nav a {
     position: relative;
@@ -612,6 +615,7 @@ footer a:hover{
     margin-top: 10%;
     transition: color 0.2s ease-in-out;
     letter-spacing: 1px;
+    z-index: 8;
   }
   nav a:before {
     
@@ -667,7 +671,7 @@ footer a:hover{
     z-index: 4;
 }
 .logo{
-  margin-top: 2%;
+    margin-top: 2%;
     margin-left: 1%;
     width: 10%;
 }
@@ -726,38 +730,57 @@ header p{
   display: none;
 }
 
+.imbattables{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-self:flex-end;
+  justify-content: center;
+ 
+}
 .carte{
-    width: 80%;
-    padding: 0px;
-    border-radius: 20px;
-    list-style-type: none;
-    -webkit-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-    -moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-    box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-    transition: -webkit-transform 1s;
-
+margin-right: 10%;
+margin-bottom: 5%;
+  padding: 10px;
+  border-radius: 20px;
+  list-style-type: none;
+  -webkit-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+  -moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+  box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
+  transition: -webkit-transform 1s;
 }
 .carte:hover{
-  transform: scale(1.02);
+transform: scale(1.10);
 }
-
-.imbattables li{
-  padding-bottom: 2%;
-  padding-right: 0;
-    margin-left: 10%;
-    margin-top: 20%;
+.imbattables p{
+font-family: "AnekOdia";
+font-weight: 500;
 }
-
-
 .photo{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 270px;
+  height: 200px;
 }
 
+.promo{
+  margin-top: -200px;
+  transform: translateX(300px);
+  position: absolute;
+  width: 25px;
+  background-color: yellow;
+  height: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: -100px;
+  z-index:2;
+}
 .prix{
-    text-align: right;  
+  text-align: right;
+}
+.photo_famille{
+  display:none;
 }
 caption{
   padding-top: 30px;
@@ -767,14 +790,11 @@ font-size: 12px;
 }
 table{
   width: 100%;
-  margin-left: 0%;
   margin-top: 10%;
-  margin-right: 0;
-  margin-bottom: 0%;
 }
 table caption{
-font-size: 12px;
-margin-bottom: 32px;
+  font-size: 12px;
+  margin: auto;
 }
 .famille1{
   display: none;
@@ -785,126 +805,115 @@ margin-bottom: 32px;
 table{
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 2%;
+  margin-left: 0;
+  margin-bottom: 0;
   
 }
 .tableau-acceuil{
-  margin-bottom: 223%;
   width: 100%;
 }
 .bouton-bleu {
   font-size: 12px;
   padding: 15px 35px 15px 35px;
   margin-left: 10%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 footer{
+  background-image: none;
+}
+#footer{
   display:flex;
   flex-wrap: wrap;
-  background-image: none;
+  justify-content: space-around;
   background-color: #92fbff7f;
-  width: 100%;
-  height: 300%;
+  height: auto;
   background-position-y: 0;
 }
 .logo_footer{
-display: flex;
-flex-direction: column;
-margin-left: 2%;
-margin-top: 10px;
-padding-top: 10px;
-padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .logo_footer p{
-font-family: "AnekOdia";
-font-size: 12px;
-font-weight: bold;
-margin-top: 10px;
-text-align: center;
+  font-family: "AnekOdia";
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
 }
 .logo-bas{
   margin-top: 2%;
-width: 60%;
-margin-left: 25%;
 }
 
 .nous{ 
- font-family: "AnekOdia";
-  font-size: 15px;
-  margin-top: 10px;
-  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-left: 0;
 }
-
-.nous p{
-  font-family: "AnekOdia";
-  color: rgb(0, 0, 0);
-  padding-top: 10px;
-  margin-left: 10%;
-}
-
 .nous a{
-font-family: "AnekOdia";
-font-size: 14px;
+  font-family: "AnekOdia";
+  font-size: 18px;
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-
+.nous li{
+  margin-top: 0;
+}
 .mentions{
-  font-family: "AnekOdia";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   width: 20%;
-  display: block;
-  font-size: 14px;
-  margin-left: 12%;
-  margin-top: 3%;
+  margin-left: 2%;
+
 }
 
-.mentions p{
+.mentions a{
   font-family: "AnekOdia";
-  padding-top: 10px;
-}
-.mentions p a{
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   color: rgb(1, 3, 4);
 }
-.mention p {
-  font-size: 14px;
-}
-
 .reseau{
   margin-top: 10px;
   width: 100px;
 }
-
 .paiement-securisé{
-  transform: translateX(100px);
- text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 320px;
+  padding-left: 0;
 }
-
 .info{
   font-family: "AnekOdia";
-  color: rgb(1, 1, 1);
-  padding-top: 20px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  margin-right: 30%;
+    color: rgb(1, 1, 1);
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
-
 .numero{
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  margin-right: 40%;
-}
-footer a:hover{
-text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 .paiement{
-  margin-left: -45%;
-  padding-top:10px;
-  width: 100%;
-  transform: translateX(20px);
-  padding-bottom: 10%;
+  width:100%;
+  height: 100px;
 }
+footer a:hover{
+  text-decoration: underline;
+}
+
+
 }
 /**responsive design portable suite**/  
 
@@ -945,192 +954,98 @@ header p{
     flex-wrap: wrap;
     
 }
-.carte{
-    padding: 10px;
-    border-radius: 20px;
-    list-style-type: none;
-    -webkit-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-    -moz-box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-    box-shadow: -2px 15px 32px 2px rgba(184,171,184,0.82);
-    transition: -webkit-transform 1s;
-}
-.carte:hover{
-  transform: scale(1.10);
-}
 
-.imbattables li{
-  padding-bottom: 2%;
-  padding-right: 2%;
-  margin-bottom: 10%;
-    margin-left: 3%;
-    margin-right: 5%;
-
-
-}
-
-.imbattables p{
-  font-family: "AnekOdia";
-  font-weight: 500;
-}
-.photo{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    height: 200px;
-}
-
-.prix{
-    text-align: right;
-}
-caption{
-  padding-top: 30px;
-}
-table th{
-font-size: 12px;
-}
-table{
-  width: 101%;
-  margin-left: 0%;
-  margin-top: -10%;
-  margin-right: 0;
-  margin-bottom: 10%;
-}
-table caption{
-font-size: 12px;
-margin-bottom: 32px;
-}
-.famille1{
-  display: none;
-}
-.famille2{
-  display: none;
-}
-table{
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 2%;
-  margin-bottom: 0px;
-}
-.tableau-acceuil{
-  margin-bottom: 160%;
-}
-.bouton-bleu {
-  font-size: 12px;
-  padding: 15px 35px 15px 35px;
-  margin-left: 10%;
-  margin-bottom: 0;
-}
 footer{
+  background-image: none;
+}
+#footer{
   display:flex;
   flex-wrap: wrap;
-  background-image: none;
   background-color: #92fbff7f;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300%;
-  background-position-y: 100%;
-  background-size: 160%;
-  
+  height: auto;
+  background-position-y: 0;
 }
 .logo_footer{
-display: flex;
-flex-direction: column;
-margin-left: 2%;
-margin-top: 10px;
-padding-top: 10px;
-padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .logo_footer p{
-font-family: "AnekOdia";
-font-size: 12px;
-font-weight: bold;
-margin-top: 10px;
-text-align: center;
+  font-family: "AnekOdia";
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
 }
 .logo-bas{
   margin-top: 2%;
-width: 50%;
-margin-left: 25%;
+  width: 60%;
+  text-align:center;
 }
 
 .nous{ 
- font-family: "AnekOdia";
-  font-size: 15px;
-  margin-top: 10px;
-  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
-
-.nous p{
-font-family: "AnekOdia";
-  color: rgb(0, 0, 0);
-  padding-top: 10px;
-}
-
 .nous a{
-font-family: "AnekOdia";
-font-size: 14px;
+  font-family: "AnekOdia";
+  font-size: 18px;
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-.mentions{
-font-family: "AnekOdia";
+.mentions{display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   width: 20%;
-  display: block;
-  font-size: 14px;
   margin-left: 12%;
-  margin-top: 3%;
+
 }
 
-.mentions p{
-font-family: "AnekOdia";
-  padding-top: 10px;
-}
-.mentions p a{
-font-size: 14px;
+.mentions a{
+  font-family: "AnekOdia";
+  font-size: 18px;
   text-decoration: none;
   color: rgb(1, 3, 4);
 }
-.mention p {
-font-size: 14px;
-}
-
 .reseau{
   margin-top: 10px;
   width: 100px;
 }
 .paiement-securisé{
-
-  transform: translateX(100px);
-  
-   text-align: center;
-  }
-  
-  .info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 320px;
+ padding-left: 0;
+}
+.info{
   font-family: "AnekOdia";
     color: rgb(1, 1, 1);
     padding-top: 10px;
     margin-bottom: 20px;
-    font-size: 18px;
-    margin-right: 30%;
-  }
-  
-  .numero{
+    font-size: 20px;
+}
+.numero{
     color: rgb(0, 0, 0);
-    font-size: 18px;
-    margin-right: 40%;
-  }
-  footer a:hover{
+    font-size: 20px;
+}
+.paiement{
+  width:100%;
+  height: 100px;
+}
+footer a:hover{
   text-decoration: underline;
-  }
-  .paiement{
-    margin-right: 50%;
-    padding-top:10px;
-    width: 40%;
-    transform: translateX(20px);
-    padding-bottom: 10%;
-  }
+}
   }     
 
   
