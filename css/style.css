@@ -1621,7 +1621,7 @@ button:hover{
 .caroussel_hotel{
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 380px;
 }
 .photo_hotel_jumbo{
   width: 50%;
@@ -1632,7 +1632,7 @@ button:hover{
   margin-top: 60px;
   left: calc(5% - 100px);
   opacity: 0;
-  animation: display 10s infinite;
+  animation: display 8s infinite;
 }
 
 img:nth-child(1) {
@@ -1652,15 +1652,15 @@ img:nth-child(4) {
     transform: translateX(200px);
     opacity: 0;
   }
-  10% {
-    transform: translateX(0);
-    opacity: 1;
-  }
   20% {
     transform: translateX(0);
     opacity: 1;
   }
-  30% {
+  40% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60% {
     transform: translateX(-200px);
     opacity: 0;
   }
@@ -1699,7 +1699,7 @@ img:nth-child(4) {
     margin-top: 30px;
     margin-left: 10%;
     padding: 0;
-    background-color: #ffffffa5;
+    background-color: #d9f8ffca;
 }
 .info_hotel, .info_hotel1{
   font-family: "AnekOdia";
@@ -1757,7 +1757,7 @@ button:hover{
     margin-right: 2%;
     margin:4px, 4px;
     padding:8px;
-    background-color: rgba(236, 236, 236, 0.757);
+    background-color: #d9f8ffcc;
     width: 500px;
     height: 710px;
     overflow-x: hidden;
@@ -1910,7 +1910,7 @@ img:nth-child(5) {
       margin-top: 10px;
       padding: 0;
       margin-left: 0;
-      background-color: #ffffffa5;
+      background-color: #d9f8ffca;
       background-size: 100%;
   }
   .info_hotel, .info_hotel1{
@@ -1968,7 +1968,6 @@ img:nth-child(5) {
       font-family: "AnekOdia";
       font-weight: 400;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 250px;
       height: 400px;
       overflow-x: hidden;
@@ -2102,7 +2101,6 @@ img:nth-child(5) {
       margin-top: 10px;
       padding: 0;
       margin-left: 0;
-      background-color: #ffffffa5;
       background-size: 100%;
   }
   .info_hotel, .info_hotel1{
@@ -2129,7 +2127,7 @@ img:nth-child(5) {
     .section3{
     background-image: url("plage_fond.jpg");
     width: 100%;
-    background-size: 800%;
+    background-size: 460%;
     height: 1300px;
     background-repeat: no-repeat;
   
@@ -2160,7 +2158,6 @@ img:nth-child(5) {
       font-family: "AnekOdia";
       font-weight: 400;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 500px;
       height: 280px;
       overflow-x: hidden;
@@ -2295,7 +2292,6 @@ img:nth-child(5) {
       margin-top: 10px;
       padding: 0;
       margin-left: 0;
-      background-color: #ffffffa5;
       background-size: 100%;
   }
   .info_hotel, .info_hotel1{
@@ -2322,7 +2318,7 @@ img:nth-child(5) {
     .section3{
     background-image: url("plage_fond.jpg");
     width: 100%;
-    background-size: 800%;
+    background-size: 300%;
     height: 1300px;
     background-repeat: no-repeat;
   
@@ -2353,7 +2349,6 @@ img:nth-child(5) {
       font-family: "AnekOdia";
       font-weight: 400;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 550px;
       height: 280px;
       overflow-x: hidden;
@@ -2490,7 +2485,6 @@ img:nth-child(5) {
       margin-top: 10px;
       padding: 0;
       margin-left: 0;
-      background-color: #ffffffa5;
       background-size: 100%;
   }
   .info_hotel, .info_hotel1{
@@ -2548,7 +2542,6 @@ img:nth-child(5) {
       margin-top: -800px;
       margin-left: 920px;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 220px;
       height: 710px;
       overflow-x: hidden;
@@ -2566,7 +2559,6 @@ img:nth-child(5) {
       margin-top: -800px;
       margin-left: 820px;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 220px;
       height: 710px;
       overflow-x: hidden;
@@ -2584,7 +2576,6 @@ img:nth-child(5) {
       margin-top: -800px;
       margin-left: 720px;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 220px;
       height: 710px;
       overflow-x: hidden;
@@ -2711,7 +2702,7 @@ img:nth-child(5) {
     margin-top: 30px;
     margin-left: 10%;
     padding: 0;
-    background-color: #ffffffa5;
+   background-color: #d9f8ffca;
 }
 .info_camping, .info_camping1{
     font-family: "AnekOdia";
@@ -2762,7 +2753,6 @@ img:nth-child(5) {
       width: 80%;
       margin-top: 20px;
       padding: 0;
-      background-color: #ffffffa5;
   }
   .info_camping, .info_camping{
     font-family: "AnekOdia";
@@ -2808,7 +2798,7 @@ button:hover{
     font-family: "AnekOdia";
     font-weight: 400;
     padding:8px;
-    background-color: rgba(236, 236, 236, 0.757);
+    background-color: #d9f8ffca;
     width: 800px;
     height: 450px;
     overflow-x: hidden;
@@ -2950,7 +2940,6 @@ img:nth-child(5) {
       width: 100%;
       margin-top: 30px;
       padding: 0;
-      background-color: #ffffffa5;
       background-size: 100%;
   }
   .info_camping, .info_camping1{
@@ -2997,7 +2986,6 @@ img:nth-child(5) {
         margin-left: 0%;
         margin-bottom: 50px;
         padding: 0;
-        background-color: #ffffffa5;
     }
     .info_camping, .info_camping1{
       font-family: "AnekOdia";
@@ -3047,7 +3035,6 @@ img:nth-child(5) {
       font-family: "AnekOdia";
       font-weight: 400;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 250px;
       height: 250px;
       overflow-x: hidden;
@@ -3184,7 +3171,6 @@ img:nth-child(5) {
     display: block;
       margin-top: 30px;
       margin: auto;
-      background-color: #ffffffa5;
       background-size: 100%;
   }
   .info_camping, .info_camping1{
@@ -3234,7 +3220,6 @@ img:nth-child(5) {
         margin-left: 0%;
         margin-bottom: 50px;
         padding: 0;
-        background-color: #ffffffa5;
     }
     .info_camping, .info_camping1{
       font-family: "AnekOdia";
@@ -3284,7 +3269,6 @@ img:nth-child(5) {
       font-family: "AnekOdia";
       font-weight: 400;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 480px;
       height: 350px;
       overflow-x: hidden;
@@ -3423,7 +3407,6 @@ img:nth-child(5) {
     display: block;
       margin-top: 30px;
       margin: auto;
-      background-color: #ffffffa5;
       background-size: 100%;
   }
   .info_camping, .info_camping1{
@@ -3473,7 +3456,6 @@ img:nth-child(5) {
         margin-left: 0%;
         margin-bottom: 50px;
         padding: 0;
-        background-color: #ffffffa5;
     }
     .info_camping, .info_camping1{
       font-family: "AnekOdia";
@@ -3523,7 +3505,6 @@ img:nth-child(5) {
       font-family: "AnekOdia";
       font-weight: 400;
       padding:8px;
-      background-color: rgba(236, 236, 236, 0.757);
       width: 480px;
       height: 300px;
       overflow-x: hidden;
@@ -3606,7 +3587,6 @@ img:nth-child(5) {
     font-family: "AnekOdia";
     font-weight: 400;
     padding:8px;
-    background-color: rgba(236, 236, 236, 0.757);
     width: 680px;
     height: 250px;
     overflow-x: hidden;
@@ -3622,7 +3602,7 @@ img:nth-child(5) {
 .mentions_légales{
   font-family: "AnekOdia";
   border: 1px solid rgb(255, 255, 255);
-  background-color: #fbf9f9c1;
+  background-color: #d9f8ffca;
   margin-top: 5%;
   margin-left: 15%;
   margin-right: 15%;
@@ -3644,7 +3624,7 @@ img:nth-child(5) {
     font-family: "AnekOdia";
     border: 1px solid rgb(255, 255, 255);
     font-size: 12px;
-    background-color: #fbf9f9c1;
+    background-color: #d9f8ffca;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 50px;
@@ -3669,7 +3649,7 @@ img:nth-child(5) {
     font-family: "AnekOdia";
     border: 1px solid rgb(255, 255, 255);
     font-size: 12px;
-    background-color: #fbf9f9c1;
+    background-color: #d9f8ffca;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 50px;
@@ -4629,4 +4609,20 @@ img:nth-child(5) {
   #tableau-croisiere {
     margin: 0;
   }
+}
+
+
+
+
+
+
+/** back office**/
+
+.ajout_photo img{
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 4%;
+  padding: 100px;
+  border: 1px solid black;
+  cursor: pointer;
 }
