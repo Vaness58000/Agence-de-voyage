@@ -11,14 +11,40 @@
 <body>
     <header>
         <div id="logo"><a href="index.html"><img class="logo" src="img/logo2.png" alt="logo valise"><img class="logo-nom" src="img/logo NOM.png"></a> </div>
-        <img class="bulle" src="img/bulle.png">   <p>Infos et réservation<br>0862 69 70 71 </p>
+        <img class="bulle" src="img/bulle.png">   <p class="clignote">Infos et réservation<br>0862 69 70 71 </p>
       
         <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
-        <nav>
+       
+        
+        <div class="menu_burger">
+        <input id="menu_burger" type="checkbox"></input>
+
+        <label for="menu_burger" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+        
+        <div class="nav">
+          <div class="nav-wrapper">
+            <nav>
+                <a href="tout les hotels.html">Séjour hôtel</a><br>
+                <a href="page camping complet.html">Séjour camping</a><br>
+                <a href="toutes les croisiere.html">Croisière</a><br>
+                <a href="#">Séjour club</a><br>
+                <a href="#">Thalasso</a>
+                <a href="#">Découverte</a>
+                <a href="#">Connexion</a>
+                <a href="#">Inscription</a>
+            </nav>
+          </div>
+        </div>
+    </div>
+        <nav class="menu-grand">
             <ul class="menu-deroulant">
                 <li class="menu-deroulant"><a href="#">Séjour</a>
                     <ul class="sous-menu">
-                        <li><a href="toutes les croisières.html">Croisière</a></li>
+                        <li><a href="toutes les croisiere.html">Croisière</a></li>
                         <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
                         <li><a href="page camping complet.html">Camping</a></li>
                         <li><a href="#">Séjour en Club</a></li>
@@ -38,38 +64,37 @@
                 </li>
             </ul>
         </nav>
-       
-        <form>
-            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
-            <input type="date" name=Date class="date" placeholder="14/04/2022">
-            <select name="nombre de jour" id="voyage">
-                        <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
-                        <option value="camping">2 semaines (12 à 19 jours)</option>
-                        <option value="croisière">Séjour long (20 jours et plus)</option>
-                      </select>  
-            <select name="type_voyage" id="voyage" aria-label="type de voyage">
-                <option value="séjour_hôtel">Séjours tout compris</option>
-                <option value="séjour_club">Séjours Famille</option>
-                <option value="croisière">Croisière</option>
-                <option value="séjour_hôtel">Séjour Hôtel/Club</option>
-                <option value="camping">Camping</option>
-                <option value="camping">Séjours Thalasso/Bien-être</option>
-              </select>
-              <button>Rechercher</button>
-          </form>
+            <form>
+                <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+                <input type="date" name=Date class="date" placeholder="14/04/2022">
+                <select name="nombre de jour" id="voyage">
+                            <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                            <option value="camping">2 semaines (12 à 19 jours)</option>
+                            <option value="croisière">Séjour long (20 jours et plus)</option>
+                        </select>  
+                <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                    <option value="séjour_hôtel">Séjours tout compris</option>
+                    <option value="séjour_club">Séjours Famille</option>
+                    <option value="croisière">Croisière</option>
+                    <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                    <option value="camping">Camping</option>
+                    <option value="camping">Séjours Thalasso/Bien-être</option>
+                </select>
+                <button>Rechercher</button>
+            </form>   
     </header>
 
         <section class="section1">
-            <div class="conteneur_photos">
+            <div class="info_hotel_jumbo">
+            <div class="conteneur_hotel">
+                    <div class="caroussel_camping">
+                        <img class="photo_hotel_jumbo" src="img/photo piscine hotel.jpg" alt="piscine extérieur de l'hôtel">
+                        <img class="photo_hotel_jumbo" src="img/resto hotel.jfif" alt="restaurant de l'hôtel">
+                        <img class="photo_hotel_jumbo" src="img/chambre hotel.jpg" alt="chambre de l'hôtel">
+                        <img class="photo_hotel_jumbo" src="img/plage hotel.jpg" alt="plage de l'hôtel">
+                      </div>    
             
-                <img class="image1" src="img/chambre hotel.jpg" alt="chambre de l'hôtel">
-                <img class="image2" src="img/resto hotel.jfif" alt="restaurant de l'hôtel">
-                <img class="image3" src="img/plage hotel.jpg" alt="plage de l'hôtel">
-
-                </div>
-                <div class="photo_hôtel">    
-                    <img src="img/photo piscine hotel.jpg" alt="piscine extérieur de l'hôtel">
-                </div>
+               
             <div class="conteneur_prix">
                 <h1>Andalousie<br>
                 Hôtel Jumbo Palia Las Palomas 4*</h1>
@@ -77,12 +102,14 @@
                 <p>537€</p>
                 <button>Réserver</button>
             </div>
+        </div>
         </section>
             <section class="section2">
                 <h1>VOUS ALLEZ ADORER</h1><article class="article1"> Nombreuses activités pour les adultes et enfants. <br>Proche du quatier de pêcheurs de la Carihuela. <br>Idéal pour les familles !</article>
                 <h1>NOUS VOUS ACCUEILLONS</h1><article class="article2">Située au sud de l'Espagne, l'Andalousie est une région attirante par ses contrastes et ses mélanges culturels. Entre villages blancs et mer bleutée, les montagnes ondulent et longent la Costa del Sol qui brille au soleil. Ne manquez pas de découvrir la province de Malaga, une des premières destinations touristiques mondiales attirante grâce à ses magnifiques plages de sable. </article>
         </section>
             <section class="section3">
+                <div class="tableau_hotel_complet">
                 <h4>Avril 2022</h4>
                 <table  class="date_sejour_hotel">
                  
@@ -136,13 +163,12 @@
                         <th class="reserver"><button>Réserver</button></th>
                     </tr>
                 </table>
-               <button class="button_offres"><a href="tout les hôtels.html">Voir d'autres offres</a></button>
-            </section>
-                <section class="section4">
+           
+            
                     
                     <div class="formalité">
                         <h2>Formalités</h2>
-                        <br><br>
+                        <br>
                         Voyageurs vaccinés :<br>
                         Bonne nouvelle : il vous faudra seulement justifier de votre certificat de vaccination complet.<br>
                         Un certificat de vaccination complet suffit (dernière dose reçue au moins 14 jours avant le départ pour les vaccins Pfizer, Moderna et AstraZeneca et au moins 28 jours avant le départ pour le vaccin Johnson & Johnson).
@@ -194,37 +220,39 @@
                         Votre séjour est assuré par le tour opérateur suivant :
                         Plein Vent.
                     </div>
+                </div>
                 </section>
-                
                 <footer>
-                    <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
-                    <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS DE VOS VACANCES. POUR VOTRE VOYAGE, ON S'OCCUPE DE TOUT !</p></div>
-                    <div class="nous">
-                        <p style="font-weight: bold; font-size: 20px;">À propos</p>
-                        </p>
-                        <a href="#">Qui sommes-nous ?</a>
-                        <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
-                    </div>
-                    <div class="mentions">
-                        
-                            <p style="font-weight: bold; font-size: 20px;">Conditions</p>
+
+                    <div id="footer">
+            
+                        <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
+                            <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS<br> DE VOS VACANCES. POUR VOTRE VOYAGE, <br>ON S'OCCUPE DE TOUT !</p>
+                        </div>
                     
-                        <p>
-                            <a href="#">CGV</a>
-                        </p>
-                        <p> 
-                           <a href="#">Protection de vie privé</a>
-                        </p>
-                        <p>
-                            <a href="mention legale.html"> Mentions légales</a>
-                        </p>
+                        <div class="liens">
+                        <div class="nous">
+                            <ul style="font-weight: bold; font-size: 20px;">À propos</ul>
+                            <li><a href="#">Qui sommes-nous ?</li></p>
+                                <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+                        </div>
+            
+                        <div class="mentions">
+                            <ul style="font-weight: bold; font-size: 20px; text-decoration: none;">Conditions</ul>
+                                <li><a href="#">CGV</a></li>
+                                <li><a href="#">Protection de vie privé</a></li>
+                                <li><a href="mention legale.html"> Mentions légales</a></li>
+                        </div>
                     </div>
-                    <div class="paiement-securisé">
-                        <p class="info" style="font-weight: bold;">INFOS ET RESERVATION</p>
-                        <p class="numero" style="font-weight: bold;">0862 69 70 71</p>
-                        <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+            
+                        <div class="paiement-securisé">
+                            <span class="info">INFOS ET RESERVATION
+                            <br>0862 69 70 71</span>
+                             <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+                        </div>
                     </div>
                 </footer>
+               
             </body>
             
             </html>

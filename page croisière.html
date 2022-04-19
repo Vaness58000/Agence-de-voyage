@@ -5,20 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <title>Page croisière</title>
 </head>
 <header>
-    <div id="logo"><img class="logo" src="img/logo4.png" alt="logo soleil mer"></div><h3>OnlineVoyages</h3> <img class="soleil" src="img/soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
-  
-    <div class="connexion_inscription"><a href="#">se connecter</a><br><a href="#">s'inscrire</a></div>
-    <nav>
+    <div id="logo"><a href="index.html"><img class="logo" src="img/logo2.png" alt="logo valise"><img class="logo-nom" src="img/logo NOM.png"></a> </div>
+      
+    <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
+   
+    
+    <div class="menu_burger">
+    <input id="menu_burger" type="checkbox"></input>
+
+    <label for="menu_burger" class="hamburger">
+      <div class="top-bun"></div>
+      <div class="meat"></div>
+      <div class="bottom-bun"></div>
+    </label>
+    
+    <div class="nav">
+      <div class="nav-wrapper">
+        <nav>
+          <a href="tout les hotels.html">Séjour hôtel</a><br>
+          <a href="page camping complet.html">Séjour camping</a><br>
+          <a href="toutes les croisiere.html">Croisière</a><br>
+          <a href="#">Séjour club</a><br>
+          <a href="#">Thalasso</a><br>
+          <a href="#">Découverte</a><br>
+          <a href="#">Connexion</a><br>
+          <a href="#">Inscription</a>
+        </nav>
+      </div>
+    </div>
+</div>
+    <nav class="menu-grand">
         <ul class="menu-deroulant">
             <li class="menu-deroulant"><a href="#">Séjour</a>
                 <ul class="sous-menu">
-                    <li><a href="#">Croisière</a></li>
-                    <li><a href="#">Séjour en Hôtel</a></li>
+                    <li><a href="toutes les croisiere.html">Croisière</a></li>
+                    <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
+                    <li><a href="page camping complet.html">Camping</a></li>
                     <li><a href="#">Séjour en Club</a></li>
-                    <li><a href="#">Camping</a></li>
+                    
                 </ul>
             </li>
          <li class="menu-deroulant"><a href="#">Week-end</a>
@@ -34,8 +62,7 @@
             </li>
         </ul>
     </nav>
-    
-   
+        
     <form>
         <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
         <input type="date" name=Date class="date" placeholder="14/04/2022">
@@ -55,175 +82,201 @@
           <button>Rechercher</button>
       </form>
 </header>
-<body>
-    <p class="destination-croisiere">Croisière Italie, Espagne, France</p>
+<div id="la-croisiere">
+        
     <div class="croisiere">
-        <div class="photo-croisiere3"> 
-            <img class="photo-croisiere photo1" src="./img/bateau-de-crosiere-de-luxe-la-nuit.jpg" alt="piscine nuit">
-            <img class="photo-croisiere photo2" src="./img/croisière.jpg" alt="bateau croisière">
-            <img class="photo-croisiere photo3" src="./img/croisiere resto.jfif" alt="resto croisière">
-            <img class="bateau" src="./img/croisiere 2.jpg" alt="gros bateau croisière">
-        </div>
-        <div class="description-croisiere">
-            <ul>
-                <li>8 jours</li>
-                <li>départ de Marseille</li>
-                <li>Costa Croisière</li>
-                <li>Pension complète</li>
-            </ul>
-            <p>Dès 629€</p>
-            <button class="bouton-croisiere">RESERVER</button>
-        </div>
+        <p class="destination-croisiere"><strong>Croisière</strong>: Italie, Espagne, France</p>
+        <div class="photo-croisiere4">
+            <div class="photo-croisiere3"> 
+                <img class="photo-croisiere photo1" src="./img/bateau-de-crosiere-de-luxe-la-nuit.jpg" alt="piscine nuit">
+                <img class="photo-croisiere photo2" src="./img/croisière.jpg" alt="bateau croisière">
+                <img class="photo-croisiere photo3" src="./img/croisiere resto.jfif" alt="resto croisière">
+            </div>
+            <div class="bateaudescription">   
+                <img class="bateau" src="./img/croisiere 2.jpg" alt="gros bateau croisière">
+                
+                <div class="description-croisiere">
+                    <ul class="description_croisiere">
+                        <li>8 jours</li>
+                        <li>départ de Marseille</li>
+                        <li>Costa Croisière</li>
+                        <li>Pension complète</li>
+                    </ul>
+                    <p>Dès 629€</p>
+                    <button class="bouton-croisiere">RESERVER</button>
+                </div>    
+            </div> 
+        </div> 
+    </div>         
+</div>
+<section class="fond-croisiere">
+    
     </div>
-    <section class="fond-croisiere">
-        <p class="depart-de">Départ de Marseille</p>
-        <div id="prix-croisiere">
-        
-            <div class="photo-interieur">
-                <img class="photo-interieur1 interieur1" src="./img/cabine intérieur.jpg" alt="cabine interieur">
-                <p class="texte-croisiere texte1">cabine intérieur</p>
-                <img class="photo-interieur1 interieur2" src="./img/Cabine-Exterieure-Costa-Luminosa.jpg" alt="cabine exterieur">
-                <p class="texte-croisiere texte2">cabine exterieur</p>
-                <img class="photo-interieur1 interieur3" src="./img/Cabine-Balcon-Costa-NeoRiviera.jpg" alt="cabine balcon">
-                <p class="texte-croisiere texte3">cabine balcon</p>
-                <img class="photo-interieur1 interieur4" src="./img/suite-costa-luminosa.jpg" alt="suite">
-                <p class="texte-croisiere texte4">cabine suite</p>
-            </div>
-            <table  id="tableau-croisiere">
-                <tr>
-                    <th>samedi 16 avril</th>
-                    <th class="interieur-tableau">629€<br>-34%</th>
-                    <th class="interieur-tableau">Epuisé</th>
-                    <th class="interieur-tableau">Epuisé</th>
-                    <th class="interieur-tableau">2499€<br>-23%</th>
-                </tr>
-                 <tr>
-                    <th>samedi 23 avril</th>
-                    <th class="interieur-tableau">799€<br>-28%</th>
-                    <th class="interieur-tableau">949€<br>-26%</th>
-                    <th class="interieur-tableau" >1029<br>-31%</th>
-                    <th class="interieur-tableau">1379€<br>-34%</th>
-                </tr>
-                <tr>
-                    <th>samedi 30 avril</th>
-                    <th class="interieur-tableau">729€<br>-31%</th>
-                    <th class="interieur-tableau">879€<br>-29%</th>
-                    <th class="interieur-tableau">949€<br>-35%</th>
-                    <th class="interieur-tableau">1299€<br>-36%</th>
-                </tr>
-            </table>
-        </div>
-        <div class="programme-croisiere">
-            <p>Programme de la croisière Italie, Espagne, France<br><br><br>
+    <div id="prix-croisiere">
+        <table  id="tableau-croisiere">
+            <tr>
+                <th class="noborder"><div class="depart_de">
+                    <p class="depart-de">Départ de Marseille</p></th>
+                <th> 
+                    <div class="cabine">
+                        <img class="photo-interieur1 interieur3" src="./img/Cabine-Balcon-Costa-NeoRiviera.jpg" alt="cabine balcon">
+                        <p class="texte-croisiere texte3">cabine balcon</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="cabine">
+                    <img class="photo-interieur1 interieur4" src="./img/suite-costa-luminosa.jpg" alt="suite">
+                    <p class="texte-croisiere texte4">cabine suite</p>
+                </div>
+            </th>
+            <th>
+                <div class="cabine">
+                    <img class="photo-interieur1 interieur1" src="./img/cabine intérieur.jpg" alt="cabine interieur">
+                    <p class="texte-croisiere texte1">cabine intérieur</p></th>
+                </div>
+            </th>
+            <th> 
+                <div class="cabine">
+                    <img class="photo-interieur1 interieur2" src="./img/Cabine-Exterieure-Costa-Luminosa.jpg" alt="cabine exterieur">
+                    <p class="texte-croisiere texte2">cabine exterieur</p>
+                </div>
+            </th>
+            </tr>
+            <tr>
+                <th class="date">samedi 16 avril</th>
+                <th class="interieur-tableau">629€<br>-34%</th>
+                <th class="interieur-tableau">Epuisé</th>
+                <th class="interieur-tableau">Epuisé</th>
+                <th class="interieur-tableau">2499€<br>-23%</th>
+            </tr>
+             <tr>
+                <th class="date">samedi 23 avril</th>
+                <th class="interieur-tableau">799€<br>-28%</th>
+                <th class="interieur-tableau">949€<br>-26%</th>
+                <th class="interieur-tableau" >1029<br>-31%</th>
+                <th class="interieur-tableau">1379€<br>-34%</th>
+            </tr>
+            <tr>
+                <th class="date">samedi 30 avril</th>
+                <th class="interieur-tableau">729€<br>-31%</th>
+                <th class="interieur-tableau">879€<br>-29%</th>
+                <th class="interieur-tableau">949€<br>-35%</th>
+                <th class="interieur-tableau">1299€<br>-36%</th>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="programme-croisiere">
+        <p>Programme de la croisière Italie, Espagne, France<br><br><br>
 
-            Jour 1<br>	
-            Marseille - Au port<br>
-            Marseille est une ville du sud-est de la France bordée par la Méditerranée et les massifs de l'Étoile<br> et du Garlaban. Elle est la deuxième ville de France (en terme de population au niveau de la<br> commune intra-muros), mais elle est la troisième agglomération après Lyon. Elle est la préfecture<br> des Bouches-du-Rhône et le chef-lieu de la région Provence Alpes Côte d'Azur. 
-            <br><br>
-            Jour 2	<br>
-            Italie (Gênes) - Au port<br>
-            Gênes est la capitale de la Ligurie et second port de la Méditerranée après Marseille. Elle est<br> connue pour son phare, la Lanterna, la Via Garibaldi et ses magnifiques palais, la Piazza De<br> Ferrari et le Palazzo Ducale (abritant bars, boutiques, expositions temporaires), le Duomo de San<br> Lorenzo, sans oublier ses « vicoli » étroites ruelles qui ajoutent au charme de la ville. 
-            <br><br>
-            Jour 3<br>	
-            Naples - Au port<br>
-            Naples est une des plus belle ville de Méditerranée. Découvrez les inombrables trésors de son<br> centre historique. A Spaccanapoli, le quartier le plus ancien de la ville, vous trouverez de<br> magnifiques églises, des rues étroites et typiques accueillant une multitudes de boutiques et<br> d'artisans. Depuis la colline du Pausillippe, la vue sur le golfe de Naples et le Vésuve est magnifique. 
-            <br><br>
-            Jour 4	<br>
-            Sicile (Messine) - Au port<br>
-            Lieu mythologique avec la légende de Charybde et Scylla, deux monstres marins situés de part et<br> d'autre du détroit, Messine a subi de multiples influences au cours des siècles passés: romains,<br> barbares, aragons...La place du Dôme est une des plus belles de la ville, avec la fontaine d‘Orion<br> et le Dôme. Une des plus belles églises de la ville est celle de Santissima Annunziata die Catalani.
-            <br><br>
-            Jour 5<br>	
-            Malte (La Valette) - Au port<br>
-            La Valette fut édifiée par un grand maître de l'ordre de St-Jean, le Français Jean de La Valette,<br> après le Grand Siège de 1565. La ville domine le port historique (Grand Harbour), l'un des plus<br> beaux ports naturels d'Europe, qui recèle plusieurs joyaux du patrimoine archéologique, historique,<br> architectural, culturel et artistique de Malte. 
-            <br><br>
-            Jour 6<br>	
-            En mer<br>
-            <br><br>
-            Jour 7	<br>
-            Barcelone - Au port<br>
-            Barcelone, capitale de la Catalogne, est l´une des villes d´Espagne les plus dynamiques et les<br> plus vibrantes. Découvrez tous les trésors de Barcelone comme "la Sagrada Familia" dans le<br> quartier de l'Eixample, qui est l'œuvre la plus connue de Gaudi, le Parc Güell, las Ramblas, la rue<br> piétonne la plus célèbre de Barcelone. 
-            <br><br>
-            Jour 8	<br>
-            Marseille - Au port<br><br>
-        
-            Ce prix TTC comprend<br><br>
-            - La croisière dans la catégorie de cabine choisie<br>
-            - La pension complète à bord, du dîner du 1er jour au petit-déjeuner du dernier jour (petit-déjeuner, déjeuner, thé de l'après-midi, dîner et snacks ou buffet de minuit)<br>
-            - La participation aux activités organisées à bord<br>
-            - Les animations et spectacles à bord<br>
-            - Le port des bagages dans les ports<br>
-            - Les taxes portuaires.<br><br><br>
-        
-        
-        
-            Offre "Forfait boissons Easy offert" :<br>
-            - Forfait boissons EASY inclus dans le tarif de la croisière<br>
-            - Offre valable pour toute nouvelle réservation effectuée avant le 30/04/2022<br>
-            - Valable uniquement sur les départs en Avril et Mai 2022<br>
-            - Valable sur un nombre de cabines limité et sous réserve de disponibilité au moment de la réservation.<br>
-        
-        
-            Ce prix TTC ne comprend pas<br><br>
-            - Les boissons (autres que celles mentionnées dans votre tarif ou votre forfait)<br>
-            - Les frais de service hôtelier obligatoires de 10€ par nuit par adulte et adolescent, 5€ par nuit par enfant de 2 à 12 ans, gratuit pour les enfants de moins de 2 ans (montants à titre indicatif, sujets à modification)<br>
-            - Les excursions facultatives proposées lors des escales<br>
-            - Les dépenses à caractère personnel<br>
-            - Les éventuels frais de porteurs aux aéroports et lors des transferts<br>
-            - Les éventuelles hausses carburant<br>
-            - Les assurances<br>
-            - Tout ce qui n'est pas mentionné dans "Ce prix comprend".<br>
-            </p>
-        </div>
-            <div class="prestation-coisiere">
-                <ul >
-                    <figcaption>Prestation à bord</figcaption>
-                    <li>Thèatre</li>
-                    <li>Piscine(s)</li>
-                    <li>Cinema</li>
-                    <li>Club enfants</li>
-                    <li>Massage</li>
-                    <li>Sauna</li>
-                    <li>Gymnase</li>
-                    <li>Discothèque</li>
-                    <li>Casino</li>
-                    <li>Restaurant</li>
-                    <li>Coiffeur</li>
-                    <li>Basket</li>
-                    <li>Bibliothèque</li>
-                    <li>Club ados</li>
-                    <li>Bar(s)</li>
-                </ul>
-            </div>
-    </section>   
+        Jour 1<br>	
+        Marseille - Au port<br>
+        Marseille est une ville du sud-est de la France bordée par la Méditerranée et les massifs de l'Étoile<br> et du Garlaban. Elle est la deuxième ville de France (en terme de population au niveau de la<br> commune intra-muros), mais elle est la troisième agglomération après Lyon. Elle est la préfecture<br> des Bouches-du-Rhône et le chef-lieu de la région Provence Alpes Côte d'Azur. 
+        <br><br>
+        Jour 2	<br>
+        Italie (Gênes) - Au port<br>
+        Gênes est la capitale de la Ligurie et second port de la Méditerranée après Marseille. Elle est<br> connue pour son phare, la Lanterna, la Via Garibaldi et ses magnifiques palais, la Piazza De<br> Ferrari et le Palazzo Ducale (abritant bars, boutiques, expositions temporaires), le Duomo de San<br> Lorenzo, sans oublier ses « vicoli » étroites ruelles qui ajoutent au charme de la ville. 
+        <br><br>
+        Jour 3<br>	
+        Naples - Au port<br>
+        Naples est une des plus belle ville de Méditerranée. Découvrez les inombrables trésors de son<br> centre historique. A Spaccanapoli, le quartier le plus ancien de la ville, vous trouverez de<br> magnifiques églises, des rues étroites et typiques accueillant une multitudes de boutiques et<br> d'artisans. Depuis la colline du Pausillippe, la vue sur le golfe de Naples et le Vésuve est magnifique. 
+        <br><br>
+        Jour 4	<br>
+        Sicile (Messine) - Au port<br>
+        Lieu mythologique avec la légende de Charybde et Scylla, deux monstres marins situés de part et<br> d'autre du détroit, Messine a subi de multiples influences au cours des siècles passés: romains,<br> barbares, aragons...La place du Dôme est une des plus belles de la ville, avec la fontaine d‘Orion<br> et le Dôme. Une des plus belles églises de la ville est celle de Santissima Annunziata die Catalani.
+        <br><br>
+        Jour 5<br>	
+        Malte (La Valette) - Au port<br>
+        La Valette fut édifiée par un grand maître de l'ordre de St-Jean, le Français Jean de La Valette,<br> après le Grand Siège de 1565. La ville domine le port historique (Grand Harbour), l'un des plus<br> beaux ports naturels d'Europe, qui recèle plusieurs joyaux du patrimoine archéologique, historique,<br> architectural, culturel et artistique de Malte. 
+        <br><br>
+        Jour 6<br>	
+        En mer<br>
+        <br><br>
+        Jour 7	<br>
+        Barcelone - Au port<br>
+        Barcelone, capitale de la Catalogne, est l´une des villes d´Espagne les plus dynamiques et les<br> plus vibrantes. Découvrez tous les trésors de Barcelone comme "la Sagrada Familia" dans le<br> quartier de l'Eixample, qui est l'œuvre la plus connue de Gaudi, le Parc Güell, las Ramblas, la rue<br> piétonne la plus célèbre de Barcelone. 
+        <br><br>
+        Jour 8	<br>
+        Marseille - Au port<br><br>
+    
+        Ce prix TTC comprend<br><br>
+        - La croisière dans la catégorie de cabine choisie<br>
+        - La pension complète à bord, du dîner du 1er jour au petit-déjeuner du dernier jour (petit-déjeuner, déjeuner, thé de l'après-midi, dîner et snacks ou buffet de minuit)<br>
+        - La participation aux activités organisées à bord<br>
+        - Les animations et spectacles à bord<br>
+        - Le port des bagages dans les ports<br>
+        - Les taxes portuaires.<br><br><br>
+    
+    
+    
+        Offre "Forfait boissons Easy offert" :<br>
+        - Forfait boissons EASY inclus dans le tarif de la croisière<br>
+        - Offre valable pour toute nouvelle réservation effectuée avant le 30/04/2022<br>
+        - Valable uniquement sur les départs en Avril et Mai 2022<br>
+        - Valable sur un nombre de cabines limité et sous réserve de disponibilité au moment de la réservation.<br>
+    
+    
+        Ce prix TTC ne comprend pas<br><br>
+        - Les boissons (autres que celles mentionnées dans votre tarif ou votre forfait)<br>
+        - Les frais de service hôtelier obligatoires de 10€ par nuit par adulte et adolescent, 5€ par nuit par enfant de 2 à 12 ans, gratuit pour les enfants de moins de 2 ans (montants à titre indicatif, sujets à modification)<br>
+        - Les excursions facultatives proposées lors des escales<br>
+        - Les dépenses à caractère personnel<br>
+        - Les éventuels frais de porteurs aux aéroports et lors des transferts<br>
+        - Les éventuelles hausses carburant<br>
+        - Les assurances<br>
+        - Tout ce qui n'est pas mentionné dans "Ce prix comprend".<br>
+        </p>
+        <div class="prestation-coisiere">
+            <ul >
+                <figcaption>Prestation à bord</figcaption>
+                <li>Thèatre</li>
+                <li>Piscine(s)</li>
+                <li>Cinema</li>
+                <li>Club enfants</li>
+                <li>Massage</li>
+                <li>Sauna</li>
+                <li>Gymnase</li>
+                <li>Discothèque</li>
+                <li>Casino</li>
+                <li>Restaurant</li>
+                <li>Coiffeur</li>
+                <li>Basket</li>
+            <li>Bibliothèque</li>
+            <li>Club ados</li>
+            <li>Bar(s)</li>
+        </ul>
+    </div>
+    </div>
+</section>   
     <footer>
-        <img title="logo" src="./img/logo 4.png" alt="logo">
-        <div class="nous">
-            <p>
-               <a href="#">À propos</a>
-            </p>
-            <p>qui sommes-nous ?</p>
-            <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+
+        <div id="footer">
+
+            <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
+                <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS<br> DE VOS VACANCES. POUR VOTRE VOYAGE, <br>ON S'OCCUPE DE TOUT !</p>
+            </div>
+        
+            <div class="liens">
+            <div class="nous">
+                <ul style="font-weight: bold; font-size: 20px;">À propos</ul>
+                <li><a href="#">Qui sommes-nous ?</li></p>
+                    <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+            </div>
+
+            <div class="mentions">
+                <ul style="font-weight: bold; font-size: 20px; text-decoration: none;">Conditions</ul>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Protection de vie privé</a></li>
+                    <li><a href="mention legale.html"> Mentions légales</a></li>
+            </div>
         </div>
-        <div class="mentions">
-            <p>
-                <a href="#">Conditions</a>
-            </p>
-            <p>
-                <a href="#">CGV</a>
-            </p>
-            <p> 
-               <a href="#">Protection de vie privé</a>
-            </p>
-            <p>
-                <a href="#"> légales</a>
-            </p>
+
+            <div class="paiement-securisé">
+                <span class="info">INFOS ET RESERVATION
+                <br>0862 69 70 71</span>
+                 <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+            </div>
         </div>
-        <div class="paiement-securisé">
-            <p class="info">INFO ET RESERVATION</p>
-            <p class="numero">0862 69 70 71</p>
-            <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
-        </div>
-      
     </footer>
     
 </body>

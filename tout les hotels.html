@@ -5,21 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <title>selection d'hôtel</title>
 </head>
 <body>
     <header>
-        <div id="logo"><img class="logo" src="img/logo4.png" alt="logo soleil mer"></div><h3>OnlineVoyages</h3> <img class="soleil" src="img/soleil.png" alt="image soleil"><p><strong>Infos et réservation<br>0862 69 70 71</strong> </p>
+        <div id="logo"><a href="index.html"><img class="logo" src="img/logo2.png" alt="logo valise"><img class="logo-nom" src="img/logo NOM.png"></a> </div>
+        <img class="bulle" src="img/bulle.png">   <p class="clignote">Infos et réservation<br>0862 69 70 71 </p>
       
-        <div class="connexion_inscription"><a href="#">se connecter</a><br><a href="#">s'inscrire</a></div>
-        <nav >
+        <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
+       
+        
+        <div class="menu_burger">
+        <input id="menu_burger" type="checkbox"></input>
+
+        <label for="menu_burger" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+        
+        <div class="nav">
+          <div class="nav-wrapper">
+            <nav>
+                <a href="tout les hotels.html">Séjour hôtel</a><br>
+                <a href="page camping complet.html">Séjour camping</a><br>
+                <a href="toutes les croisiere.html">Croisière</a><br>
+                <a href="#">Séjour club</a><br>
+                <a href="#">Thalasso</a>
+                <a href="#">Découverte</a>
+                <a href="#">Connexion</a>
+                <a href="#">Inscription</a>
+            </nav>
+          </div>
+        </div>
+    </div>
+        <nav class="menu-grand">
             <ul class="menu-deroulant">
                 <li class="menu-deroulant"><a href="#">Séjour</a>
                     <ul class="sous-menu">
                         <li><a href="toutes les croisiere.html">Croisière</a></li>
                         <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
-                        <li><a href="#">Séjour en Club</a></li>
                         <li><a href="page camping complet.html">Camping</a></li>
+                        <li><a href="#">Séjour en Club</a></li>
+                        
                     </ul>
                 </li>
              <li class="menu-deroulant"><a href="#">Week-end</a>
@@ -67,10 +96,10 @@
 
     <ul class="imbattables">
         <li class="carte">
-            <a href="#">
+            <a href="hôtel jumbo.html">
                 <img class="photo" src="./img/photo piscine hotel.jpg" alt="photo piscine portugal">
                 <p class="promo">-50%</p> 
-                <p>fizero hôtel<br> Hôtel 4*<br><br> Italie</p>
+                <p>Hôtel Jumbo Palia Las Palomas <br> Hôtel 4*<br><br> Andalousie</p>
                 <p class="prix">À partir de 537€</p>
             </a>
         </li>
@@ -90,8 +119,6 @@
                 <p class="prix">À partir de 180€</p>
             </a>
         </li>
-    </ul>
-    <ul class="imbattables">
         <li class="carte">
             <a href="#">
                 <img class="photo" src="./img/hotel3.jpg" alt="photo restaurant japon">
@@ -117,36 +144,36 @@
             </a>
         </li>
     </ul>
-    <button class="voir-plus">Voir plus d'hôtel</button>
+    <button class="voir-plus">Voir plus d'hôtels</button>
     <footer>
-        <img title="logo" src="./img/logo 4.png" alt="logo">
-        <div class="nous">
-            <p>
-               <a href="#">À propos</a>
-            </p>
-            <p>qui sommes-nous ?</p>
-            <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+
+        <div id="footer">
+
+            <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
+                <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS<br> DE VOS VACANCES. POUR VOTRE VOYAGE, <br>ON S'OCCUPE DE TOUT !</p>
+            </div>
+        
+            <div class="liens">
+            <div class="nous">
+                <ul style="font-weight: bold; font-size: 20px;">À propos</ul>
+                <li><a href="#">Qui sommes-nous ?</li></p>
+                    <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+            </div>
+
+            <div class="mentions">
+                <ul style="font-weight: bold; font-size: 20px; text-decoration: none;">Conditions</ul>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Protection de vie privé</a></li>
+                    <li><a href="mention legale.html"> Mentions légales</a></li>
+            </div>
         </div>
-        <div class="mentions">
-            <p>
-                <a href="#">Conditions</a>
-            </p>
-            <p>
-                <a href="#">CGV</a>
-            </p>
-            <p> 
-               <a href="#">Protection de vie privé</a>
-            </p>
-            <p>
-                <a href="#"> légales</a>
-            </p>
+
+            <div class="paiement-securisé">
+                <span class="info">INFOS ET RESERVATION
+                <br>0862 69 70 71</span>
+                 <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+            </div>
         </div>
-        <div class="paiement-securisé">
-            <p class="info">INFO ET RESERVATION</p>
-            <p class="numero">0862 69 70 71</p>
-            <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
-        </div>
-    
-    
+    </footer>
 </body>
 </html>

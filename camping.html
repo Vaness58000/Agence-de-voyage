@@ -11,14 +11,40 @@
 <body>
     <header>
         <div id="logo"><a href="index.html"><img class="logo" src="img/logo2.png" alt="logo valise"><img class="logo-nom" src="img/logo NOM.png"></a> </div>
-        <img class="bulle" src="img/bulle.png">   <p>Infos et réservation<br>0862 69 70 71 </p>
+        <img class="bulle" src="img/bulle.png">   <p class="clignote">Infos et réservation<br>0862 69 70 71 </p>
       
         <div class="connexion_inscription"><button class="connexion"><a href="#">se connecter</a></button><button class="inscription"><a href="#">s'inscrire</a></button></div>
-        <nav>
+       
+        
+        <div class="menu_burger">
+        <input id="menu_burger" type="checkbox"></input>
+
+        <label for="menu_burger" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+        
+        <div class="nav">
+          <div class="nav-wrapper">
+            <nav>
+                <a href="tout les hotels.html">Séjour hôtel</a><br>
+                <a href="page camping complet.html">Séjour camping</a><br>
+                <a href="toutes les croisiere.html">Croisière</a><br>
+                <a href="#">Séjour club</a><br>
+                <a href="#">Thalasso</a><br>
+                <a href="#">Découverte</a><br>
+                <a href="#">Connexion</a><br>
+                <a href="#">Inscription</a>
+            </nav>
+          </div>
+        </div>
+    </div>
+        <nav class="menu-grand">
             <ul class="menu-deroulant">
                 <li class="menu-deroulant"><a href="#">Séjour</a>
                     <ul class="sous-menu">
-                        <li><a href="toutes les croisières.html">Croisière</a></li>
+                        <li><a href="toutes les croisiere.html">Croisière</a></li>
                         <li><a href="tout les hotels.html">Séjour en Hôtel</a></li>
                         <li><a href="page camping complet.html">Camping</a></li>
                         <li><a href="#">Séjour en Club</a></li>
@@ -38,37 +64,33 @@
                 </li>
             </ul>
         </nav>
-       
-        <form>
-            <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
-            <input type="date" name=Date class="date" placeholder="14/04/2022">
-            <select name="nombre de jour" id="voyage">
-                        <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
-                        <option value="camping">2 semaines (12 à 19 jours)</option>
-                        <option value="croisière">Séjour long (20 jours et plus)</option>
-                      </select>  
-            <select name="type_voyage" id="voyage" aria-label="type de voyage">
-                <option value="séjour_hôtel">Séjours tout compris</option>
-                <option value="séjour_club">Séjours Famille</option>
-                <option value="croisière">Croisière</option>
-                <option value="séjour_hôtel">Séjour Hôtel/Club</option>
-                <option value="camping">Camping</option>
-                <option value="camping">Séjours Thalasso/Bien-être</option>
-              </select>
-              <button>Rechercher</button>
-          </form>
+            <form>
+                <input type="text" name=Destination class="destination" placeholder="pays, région, ville">
+                <input type="date" name=Date class="date" placeholder="14/04/2022">
+                <select name="nombre de jour" id="voyage">
+                            <option value="séjour_club">cours séjour ou week-end (jusqu'à 5 jours)</option>
+                            <option value="camping">2 semaines (12 à 19 jours)</option>
+                            <option value="croisière">Séjour long (20 jours et plus)</option>
+                        </select>  
+                <select name="type_voyage" id="voyage" aria-label="type de voyage">
+                    <option value="séjour_hôtel">Séjours tout compris</option>
+                    <option value="séjour_club">Séjours Famille</option>
+                    <option value="croisière">Croisière</option>
+                    <option value="séjour_hôtel">Séjour Hôtel/Club</option>
+                    <option value="camping">Camping</option>
+                    <option value="camping">Séjours Thalasso/Bien-être</option>
+                </select>
+                <button>Rechercher</button>
+            </form>   
     </header>
-        <section class="section5">
-            <div class="conteneur_photos_camping">
-            
-                <img class="camping1" src="img/camping3.jpg" alt="chambre de l'hôtel">
-                <img class="camping2" src="img/camping2.jpg" alt="restaurant de l'hôtel">
-                <img class="camping3" src="img/camping1.jpg" alt="plage de l'hôtel">
-
-            </div>
-            <div class="photo_camping">    
-                    <img src="img/camping.jfif" alt="piscine camping">
-                </div>
+    <div class="presentation_camping">
+    <div class="caroussel_camping">
+        <img src="img/camping.jfif" alt="piscine camping" class="photo_camping">
+        <img src="img/camping3.jpg" alt="chambre de l'hôtel" class="photo_camping">
+        <img src="img/camping2.jpg" alt="restaurant de l'hôtel"class="photo_camping">
+        <img src="img/camping1.jpg" alt="plage de l'hôtel" class="photo_camping">
+        
+      </div>    
             <div class="conteneur_prix_info">
                 <h1>  France Cote Atlantique <br>
                 Camping Club Lou Pignada Landes 5*</h1>
@@ -78,7 +100,7 @@
                 <span>75€</span>
                 <button>Réserver</button>
             </div>
-        </section>
+        </div>
             <section class="section6">
                 <h1>VOUS ALLEZ ADORER</h1><article class="article1"> Cadre naturel exceptionnel
                     Proximité avec les plages
@@ -90,6 +112,7 @@
                     - L'accueil en club pour les enfants à partir de 4 ans et jusqu'à 12 ans (juillet/août).</article>
         </section>
             <section class="section7">
+            <div class="tableau-acceuil" id="tableau_camping_complet">
                 <table  class="date_sejour_camping">
                  
                     <tr class="tableau_camping1">
@@ -97,7 +120,7 @@
                         <th class="info_camping">Date de retour</th>
                         <th class="info_camping">Durée</th>
                         <th class="info_camping">Prix TTC/PERS.</th>
-                        <th class="reserver">Paiement sécurisé</th>
+                        <th class="reserver">Paiement <br>sécurisé</th>
                     </tr>
                     <tr class="tableau_camping">
                         <th class="info_camping1">Dimanche 17 avril </th>
@@ -142,10 +165,8 @@
                         <th class="reserver"><button>Réserver</button></th>
                     </tr>
                 </table>
-                <button class="button_offres_camping"><a href="page camping complet.html">Voir d'autres offres</a></button>
-            </section>
-
-                <section class="section8">
+               
+            
                     
                     <div class="formalité_camping">
                         <h2>SITUATION</h2>
@@ -318,35 +339,37 @@
                             - Les garanties assistance, rapatriement, frais médicaux et d'hospitalisation, assistance juridique et pénale.<br>
                             - Les assurances annulation, bagages, responsabilité civile.
                     </div>
+                </div>
                 </section>
                 
                 <footer>
-                    <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
-                    <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS DE VOS VACANCES. POUR VOTRE VOYAGE, ON S'OCCUPE DE TOUT !</p></div>
-                    <div class="nous">
-                        <p style="font-weight: bold; font-size: 20px;">À propos</p>
-                        </p>
-                        <a href="#">Qui sommes-nous ?</a>
-                        <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
-                    </div>
-                    <div class="mentions">
-                        
-                            <p style="font-weight: bold; font-size: 20px;">Conditions</p>
+
+                    <div id="footer">
+            
+                        <div class="logo_footer"><img class="logo-bas" title="logo" src="./img/logo.png" alt="logo">
+                            <p class="sloggan">VOUS N'AVEZ QU'À CHOISIR LES COULEURS<br> DE VOS VACANCES. POUR VOTRE VOYAGE, <br>ON S'OCCUPE DE TOUT !</p>
+                        </div>
                     
-                        <p>
-                            <a href="#">CGV</a>
-                        </p>
-                        <p> 
-                           <a href="#">Protection de vie privé</a>
-                        </p>
-                        <p>
-                            <a href="mention legale.html"> Mentions légales</a>
-                        </p>
+                        <div class="liens">
+                        <div class="nous">
+                            <ul style="font-weight: bold; font-size: 20px;">À propos</ul>
+                            <li><a href="#">Qui sommes-nous ?</li></p>
+                                <img class="reseau" title="reseau sociaux" src="./img/pngegg.png" alt="reseau sociaux">
+                        </div>
+            
+                        <div class="mentions">
+                            <ul style="font-weight: bold; font-size: 20px; text-decoration: none;">Conditions</ul>
+                                <li><a href="#">CGV</a></li>
+                                <li><a href="#">Protection de vie privé</a></li>
+                                <li><a href="mention legale.html"> Mentions légales</a></li>
+                        </div>
                     </div>
-                    <div class="paiement-securisé">
-                        <p class="info" style="font-weight: bold;">INFOS ET RESERVATION</p>
-                        <p class="numero" style="font-weight: bold;">0862 69 70 71</p>
-                        <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+            
+                        <div class="paiement-securisé">
+                            <span class="info">INFOS ET RESERVATION
+                            <br>0862 69 70 71</span>
+                             <img class="paiement" title="paiements sécurisés" src="./img/paiement.png" alt="image carte de paiements">
+                        </div>
                     </div>
                 </footer>
             </body>
